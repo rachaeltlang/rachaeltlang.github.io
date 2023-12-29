@@ -57,7 +57,7 @@ function Header() {
                     <li style={navListItemStyle}><a style={linkStyle} href="/about">About</a></li>
                     <li style={navListItemStyle}><a style={linkStyle} href="/experience">Experience</a></li>
                     <li style={navListItemStyle}><a style={linkStyle} href="/projects">Projects</a></li>
-                    {/* <li style={navListItemStyle}><a style={linkStyle} href="/resume">Resume</a></li> */}
+                    <li style={navListItemStyle}><a style={linkStyle} href="/resume">Resume</a></li>
                 </ul>
             </nav>
         
