@@ -1,6 +1,5 @@
 import React from 'react';
-import croissant from "./croissant.jpg";
-// import About from "./About";
+import croissant from ".././files/croissant.jpg";
 
 function Header() {
     const headerStyle = {
@@ -11,6 +10,7 @@ function Header() {
         backgroundColor: 'white',
         color: '#000000',
         margin: '0 100px',
+        font: 'Helvetica'
     };
 
     const navListStyle = {
@@ -19,6 +19,7 @@ function Header() {
         gap: '20px',
         margin: '0',
         padding: '0',
+        fontSize: '18px',
     };
 
     const navListItemStyle = {
@@ -47,7 +48,7 @@ function Header() {
         <header style={headerStyle}>
 
             <div className="logo" style={titleStyle}>
-                <a href="/"><img src={croissant} alt="Logo" style={imageStyle} /></a>
+                <a href="/"><img src={croissant} alt="logo" style={imageStyle} /></a>
                 <a style={linkStyle} href="/">Rachael Lang</a>
             </div>
 
@@ -60,7 +61,6 @@ function Header() {
                     <li style={navListItemStyle}><a style={linkStyle} href="/resume">Resume</a></li>
                 </ul>
             </nav>
-        
         </header>
     );
 }

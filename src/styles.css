@@ -1,0 +1,61 @@
+/* apply to everything */
+* {
+    /* font-size: 100%; */
+    font-family: Helvetica, sans-serif;
+}
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.text-container {
+    text-align: center;
+    padding: 20px;
+    margin-right: 100px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.container {
+    background-color: lavender;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.content-container {
+    margin: 50px;
+    padding: 50px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.about {
+    background-color: lightcyan;
+    min-height: 100vh;
+    justify-content: left;
+}
+
+.about-text {
+    margin: 100px;
+    font-family: "Trebuchet MS";
+    
+}
+
+.experience {
+    background-color: lemonchiffon;
+    min-height: 100vh;
+    display: flex;
+    justify-content: left;
+}
+
+/* mistyrose */

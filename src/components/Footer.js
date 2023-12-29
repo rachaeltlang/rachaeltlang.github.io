@@ -1,5 +1,5 @@
 import React from 'react';
-import croissant from "./croissant.jpg";
+import croissant from ".././files/croissant.jpg";
 
 // TODO: make this
 
@@ -9,9 +9,9 @@ function Footer() {
         bottom: 0,
         width: '100%',
         backgroundColor: 'white',
-        padding: '20px',
+        padding: '10px',
         textAlign: 'center',
-        margin: '0 100px',
+        // margin: '0 100px',
       };
 
     const navListStyle = {
