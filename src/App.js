@@ -12,7 +12,7 @@ import Projects from './pages/Projects';
 function App() {
 
   return (
-    
+    <div className="margins">
     <Router>
       <div>
         <Header />
@@ -25,6 +25,7 @@ function App() {
         {/* <Footer /> */}
       </div>
     </Router>
+    </div>
   );
 }
 

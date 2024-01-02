@@ -4,7 +4,7 @@ import croissant from '../files/croissant.jpg';
 function Home() {
 
     return (
-        <div className="container">
+        <div className="home-container">
           <div className="content-container centered-content">
             <div className="text-container">
               <h1 className="h1-style">Rachael Lang</h1>
