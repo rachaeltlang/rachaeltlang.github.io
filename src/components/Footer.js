@@ -4,60 +4,24 @@ import croissant from ".././files/croissant.jpg";
 // TODO: make this
 
 function Footer() {
-    const footerStyle = {
-        position: 'fixed',
-        bottom: 0,
-        width: '100%',
-        backgroundColor: 'white',
-        padding: '10px',
-        textAlign: 'center',
-        // margin: '0 100px',
-      };
-
-    const navListStyle = {
-        listStyle: 'none',
-        display: 'flex',
-        gap: '20px',
-        margin: '0',
-        padding: '0',
-    };
-
-    const navListItemStyle = {
-        display: 'inline',
-    };
-
-    const linkStyle = {
-        textDecoration: 'none',
-        color: '#3eb489',
-    };
-
-    const logoStyle = {
-        display: 'flex',
-        alignItems: 'center',
-        fontSize: '24px',
-        fontWeight: 'bold',
-    };
-
-    const imageStyle = {
-        width: '50px',
-        height: '50px',
-        marginRight: '8px',
-    };
 
     return (
-        <footer style={footerStyle}>
+        <footer className="footer">
 
-            <div className="logo" style={logoStyle}>
-                <a href="/"><img src={croissant} alt="Logo" style={imageStyle} /></a>
-                <a style={linkStyle} href="/">Rachael Lang</a>
+            <div className="logo">
+                <a href="/"><img src={croissant} alt="Logo" className="image" /></a>
+                {/* <a href="/" className="header-title">Rachael Lang</a> */}
+
+                <div className="footer-container">
+                    <div><p>Let's Connect!</p></div>
+                    <div><a href="https://linkedin.com/in/rachaeltlang"><i class="fa-brands fa-linkedin fa-2x font-awesome"></i></a></div>
+                    <div><a href="https://github.com/rachaellang"><i class="fa-brands fa-square-github fa-2x font-awesome"></i></a></div>
+                    <div><a href="mailto:rachael.rtl.lang@gmail.com"><i class="fa-solid fa-envelope fa-2x font-awesome"></i></a></div>
+                    <div><p>© Rachael Lang 2024</p></div>
+                </div>
+                {/* easter egg */}
+
             </div>
-
-            <nav>
-                <ul style={navListStyle} className="nav-list">
-                    <li style={navListItemStyle}><a style={linkStyle} href="/">Home</a></li>
-                </ul>
-            </nav>
-
         </footer>
     );
 }

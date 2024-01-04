@@ -2,7 +2,11 @@
 
 function Projects() {
     return (
-        <p>projects some text</p>
+        <div className="container">
+            <h1 className="about-text">Projects</h1>
+            <p className="about-text">Here are some projects I've done!</p>
+
+        </div>
     )
 }
 

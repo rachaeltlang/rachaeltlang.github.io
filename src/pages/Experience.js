@@ -8,7 +8,7 @@ import foxconn from "../files/foxconn.png"
 
 function Experience() {
     return (
-        <div className="about-container">
+        <div className="container">
             <h1>Some Things I've Done</h1>
 
             {/* Intel */}
@@ -21,6 +21,7 @@ function Experience() {
                 </div>
                 <div>
                     <h2>Intel</h2>
+                    <h3>Software Engineer Intern</h3>
                     <p>intel stuff</p>
                 </div>
             </div>
@@ -35,6 +36,7 @@ function Experience() {
                 </div>
                 <div>
                     <h2>Target</h2>
+                    <h3>Software Engineer Intern</h3>
                     <p>target stuff</p>
                 </div>
             </div>
@@ -49,6 +51,7 @@ function Experience() {
                 </div>
                 <div>
                     <h2>The J.M. Smucker Company</h2>
+                    <h3>Software Engineer Intern</h3>
                     <p>Smuckers stuff</p>
                 </div>
             </div>
@@ -63,6 +66,8 @@ function Experience() {
                 </div>
                 <div>
                     <h2>The University of Wisconsin-Madison</h2>
+                    <h2>Division of Information Technology Help Desk</h2>
+                    <h3>Supervisor</h3>
                     <p>UW-Madison stuff</p>
                 </div>
             </div>
