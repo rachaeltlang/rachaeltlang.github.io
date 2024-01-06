@@ -1,16 +1,12 @@
 import React, { useEffect } from 'react';
-// import Project1 from '../projects/hw1badgerbakery/badger-bakery/index.html'
+import htmlContent from "../projects/1BadgerBakery/badger-bakery/index.html"
 
 function Project1() {
-    //   useEffect(() => {
-    //     // Redirect to the HTML file's URL
-    //     window.location.href = '../projects/hw1badgerbakery/badger-bakery/index.html';
-    //   }, []);
-
-    console.log('Project1 component rendered');
+   
     return (
         <div>
             <h1>Badger Bakery</h1>
+            <div dangerouslySetInnerHTML={{ __html: htmlContent }}></div>
         </div>
     );
 }

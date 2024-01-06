@@ -23,10 +23,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/experience" element={<Experience />} />
-            <Route path="/projects" element={<Projects />}>
-              {/* <Route index element={<Project1 />} /> */}
-              <Route path="/projects/badger-bakery" element={<Project1 />} />
-            </Route>
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/badger-bakery" element={<Project1 />} />
           </Routes>
           <Footer />
         </div>

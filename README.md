@@ -1,3 +1,3 @@
 # Rachael's Personal Website
 
-This is my personal webiste made using React
+This is my personal website made using React.

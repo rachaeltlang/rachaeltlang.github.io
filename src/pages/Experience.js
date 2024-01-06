@@ -4,7 +4,6 @@ import intel from "../files/intel.png"
 import target from "../files/target.png"
 import smuckers from "../files/smuckers.png"
 import uwmadison from "../files/uwmadison.png"
-import foxconn from "../files/foxconn.png"
 
 function Experience() {
     return (
