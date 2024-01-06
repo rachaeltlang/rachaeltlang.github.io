@@ -13,18 +13,18 @@ function App() {
 
   return (
     <div className="margins">
-    <Router>
-      <div>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+      <Router basename={process.env.PUBLIC_URL}>
+        <div>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/projects" element={<Projects />} />
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
     </div>
   );
 }
