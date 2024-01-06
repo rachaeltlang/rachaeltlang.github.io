@@ -4,13 +4,27 @@
 <head>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/favicon.ico" />
     <script src="https://kit.fontawesome.com/a7ff71eb5b.js" crossorigin="anonymous"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Website created using HTML and CSS" />
-    <link rel="apple-touch-icon" href="/assets/favicon.ico" />  
+
+    <script>
+        // redirect to the homepage
+        function redirectToHomepage() {
+            window.location.href = "/";
+        }
+
+        // Check if the page is not the homepage (optional)
+        if (window.location.pathname !== '/') {
+            // If it's not the homepage, redirect to the homepage
+            redirectToHomepage();
+        }
+    </script>
     <title>Rachael Lang</title>
+
 </head>
 
 <header id="header"></header>
@@ -33,13 +47,13 @@
             </div>
         </div>
     </div>
-    
+
 </body>
 
 <footer id="footer"></footer>
 
-<!-- script to load header and footer using fetch -->
 <script>
+    // load header and footer using fetch
     fetch("header.html")
         .then(response => response.text())
         .then(data => {
@@ -51,5 +65,8 @@
         .then(data => {
             document.getElementById("footer").innerHTML = data;
         });
+
+
 </script>
+
 </html>
