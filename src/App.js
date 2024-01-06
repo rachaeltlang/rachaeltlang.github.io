@@ -8,19 +8,25 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Experience from './pages/Experience';
 import Projects from './pages/Projects';
+import Project1 from './pages/Project1';
 
 function App() {
 
   return (
     <div className="margins">
-      <Router basename={process.env.PUBLIC_URL}>
+      {/* <Router basename={process.env.PUBLIC_URL}> */}
+      <Router>
         <div>
           <Header />
           <Routes>
+            <Route path="*" element={<Home />} /> {/* invalid urls redirect to Home */}
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/experience" element={<Experience />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects" element={<Projects />}>
+              {/* <Route index element={<Project1 />} /> */}
+              <Route path="/projects/badger-bakery" element={<Project1 />} />
+            </Route>
           </Routes>
           <Footer />
         </div>
@@ -31,3 +37,5 @@ function App() {
 
 export default App;
 
+// line for package.json, after "private": true,
+//   "homepage": "https://github.com/rachaellang/rachaellang.github.io",

@@ -1,4 +1,4 @@
-import croissant from '../files/croissant.jpg';
+import rachael from '../files/rachael.jpeg';
 
 // Home page / landing page
 function Home() {
@@ -13,8 +13,8 @@ function Home() {
                 </div>
                 <div className="image-container">
                     <img
-                        style={{ width: '200px', height: '200px', borderRadius: 150 / 2, }}
-                        src={croissant}
+                        style={{ width: '300px', height: '300px' }} // borderRadius: 150 / 2,
+                        src={rachael}
                         alt="a croissant plush, from Jellycat"
 
                     />
