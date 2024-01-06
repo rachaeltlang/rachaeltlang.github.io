@@ -14,7 +14,6 @@ function App() {
 
   return (
     <div className="margins">
-      {/* <Router basename={process.env.PUBLIC_URL}> */}
       <Router>
         <div>
           <Header />
@@ -34,6 +33,3 @@ function App() {
 }
 
 export default App;
-
-// line for package.json, after "private": true,
-//   "homepage": "https://github.com/rachaellang/rachaellang.github.io",

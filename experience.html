@@ -1,0 +1,79 @@
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<header id="header"></header>
+
+<body>
+
+    <div class="container">
+        <h1>Some Things I've Done</h1>
+
+        <!-- Intel -->
+        <div class="experience-entry">
+            <div>
+                <img style="width: 200px; height: 200px;" src="/assets/images/intel.jpg" alt="intel logo">
+            </div>
+            <div>
+                <h2>Intel</h2>
+                <h3>Software Engineer Intern</h3>
+                <p>intel stuff</p>
+            </div>
+        </div>
+
+        <!-- Target -->
+        <div class="experience-entry">
+            <div>
+                <img style="width: 200px; height: 200px;" src="/assets/images/target.jpg" alt="target logo" />
+            </div>
+            <div>
+                <h2>Target</h2>
+                <h3>Software Engineer Intern</h3>
+                <p>target stuff</p>
+            </div>
+        </div>
+
+        <!-- Smuckers -->
+        <div class="experience-entry">
+            <div>
+                <img style="width: 200px; height: 200px;" src="/assets/images/smuckers.jpg" alt="smuckers logo" />
+            </div>
+            <div>
+                <h2>The J.M. Smucker Company</h2>
+                <h3>Software Engineer Intern</h3>
+                <p>Smuckers stuff</p>
+            </div>
+        </div>
+
+        <!-- UW-Madison -->
+        <div class="experience-entry">
+            <div>
+                <img style="width: 200px; height: 200px;" src="/assets/images/uwmadison.jpg"
+                    alt="The University of Wisconsin-Madison logo" />
+            </div>
+            <div>
+                <h2>The University of Wisconsin-Madison</h2>
+                <h2>Division of Information Technology Help Desk</h2>
+                <h3>Supervisor</h3>
+                <p>UW-Madison stuff</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer id="footer"></footer>
+
+<!-- script to load header and footer using fetch -->
+<script>
+    fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+        });
+
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        });
+</script>

@@ -1,0 +1,31 @@
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<header id="header"></header>
+
+<div class="container">
+    <h1 class="about-text">Projects</h1>
+    <p class="about-text">Here are some projects I've done!</p>
+
+    <h2>Badger Bakery (HTML)</h2>
+    <a href="projects/badger-bakery">click here</a>
+
+</div>
+
+<footer id="footer"></footer>
+
+<!-- script to load header and footer using fetch -->
+<script>
+    fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+        });
+
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        });
+</script>
