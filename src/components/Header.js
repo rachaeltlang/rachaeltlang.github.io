@@ -1,5 +1,6 @@
 import React from 'react';
 import croissant from ".././files/croissant.jpg";
+import resume from "../files/RachaelLangResume.pdf"
 
 function Header() {
     return (
@@ -18,7 +19,7 @@ function Header() {
                     <li><a className="header-text" href="/about">About</a></li>
                     <li><a className="header-text" href="/experience">Experience</a></li>
                     <li><a className="header-text" href="/projects">Projects</a></li>
-                    <li><a className="header-text" href="/resume">Resume</a></li>
+                    <li><a className="header-text" href={resume} download="RachaelLangResume.pdf">Resume</a></li>
                 </ul>
             </nav>
         </header>
