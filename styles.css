@@ -26,14 +26,16 @@
 /* END FONTS */
 
 /* GENERAL */
-.margins {
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.h1 {
+h1 {
     font-size: 36px;
     font-family: "Outfit";
+    line-height: 2;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+
 }
 
 .container {
@@ -87,34 +89,29 @@
 .projects-container {
     background-color: lemonchiffon;
     min-height: 100vh;
-    padding: 100px;
+    /* padding: 100px; */
 }
-
 
 /* END PROJECTS PAGE */
 
 
-.centered-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 .text-container {
     text-align: center;
     padding: 20px;
-    margin-right: 100px;
+    margin: 40px;
+    /* border-style: solid; */
+    /* for troubleshooting */
 }
 
+/* side-by-side arrangement of elements */
 .content-container {
     margin: 50px;
-    padding: 50px;
+    padding: 20px;
     display: flex;
     align-items: flex-start;
+    /* border-style: dotted; */
+    /* for troubleshooting */
 }
-
-
 
 .image {
     width: 50px;
@@ -124,19 +121,23 @@
 
 /* HEADER */
 
+/* TODO: fix margins/padding, current design not responsive */
+/* something about max width, maybe? */
 .header {
-    position: sticky;
+    /* TODO: implement sticky */
+    /* position: sticky;
+    top: 0;
+    z-index: 1000; */
     display: flex;
-    align-items: left;
+    align-items: center;
     justify-content: space-between;
     padding: 20px;
-    padding-left: 200px;
-    padding-right: 200px;
+    /* padding-left: 200px;
+    padding-right: 200px; */
 }
 
 .logo {
     display: flex;
-    align-items: center;
 }
 
 .header-title,
@@ -149,14 +150,12 @@
     color: #3eb489;
     display: flex;
     align-items: center;
-
 }
 
 .header-list {
     gap: 20px;
     list-style: none;
     display: flex;
-    align-items: center;
 }
 
 .header-tab,
@@ -164,6 +163,7 @@
     text-decoration: none;
     font-family: "Libre Franklin";
     font-size: 20px;
+    font-weight: 600;
     color: #3eb489;
 }
 
