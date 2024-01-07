@@ -29,11 +29,20 @@
 h1 {
     font-size: 36px;
     font-family: "Outfit";
+    /* font-weight: bold; */
     line-height: 2;
 }
 
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
 p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.75;
 
 }
@@ -44,6 +53,11 @@ p {
     min-height: 100vh;
     justify-content: center;
     padding: 30px;
+}
+
+/* change links to mint green */
+.container a {
+    color: darkcyan;
 }
 
 /* built-in bootstrap button styling, copied from documentation */
@@ -85,22 +99,17 @@ p {
 .show>.btn-primary.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem rgba(102, 221, 170, 0.5);
 }
+/* 
+/* built-in bootstrap button styling, copied from documentation */
+/* change from blue to mint-ish green */
+.link-primary {
+    color: mediumaquamarine;
+} */
 
 /* end bootstrap */
 /* END GENERAL */
 
 /* HOME PAGE */
-
-/* the "Rachael Lang" text */
-.name {
-    font-size: 60px;
-    font-family: "Shantell Sans";
-}
-
-.main-img {
-    border-radius: 50%;
-    filter: drop-shadow(10px 10px 10px grey);
-}
 
 /* END HOME PAGE */
 
@@ -231,7 +240,7 @@ p {
     flex-direction: row;
     justify-content: space-between;
     column-gap: 20px;
-    color: darkslategray;
+    color: darkcyan;
     /* border-style: solid; */
 }
 
