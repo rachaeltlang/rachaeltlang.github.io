@@ -1,11 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    
 <head>
+    <meta charset="utf-8">
+
+    <title>Rachael Lang | Experience</title>
+
+    <meta name="description" content="Rachael Lang's personal website created using HTML and CSS" />
+    <meta name="author" content="Rachael Lang">
+    <meta name="keywords" content="software engineer, computer science, personal website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000" />
+
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/favicon.ico" />
+
+    <script src="https://kit.fontawesome.com/a7ff71eb5b.js" crossorigin="anonymous"></script>
+
+    <script>
+        // load header and footer using fetch
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
 </head>
 
-<header id="header"></header>
-
 <body>
-
+    <header id="header"></header>
     <div class="container">
         <h1>Some Things I've Done</h1>
 
@@ -59,21 +89,5 @@
             </div>
         </div>
     </div>
+    <footer id="footer"></footer>
 </body>
-
-<footer id="footer"></footer>
-
-<!-- script to load header and footer using fetch -->
-<script>
-    fetch("header.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("header").innerHTML = data;
-        });
-
-    fetch("footer.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("footer").innerHTML = data;
-        });
-</script>
