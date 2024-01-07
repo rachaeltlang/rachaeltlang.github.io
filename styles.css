@@ -34,17 +34,16 @@ h1 {
 
 p {
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1.75;
 
 }
 
+/* container used by all pages except home */
 .container {
-    background-color: lightcyan;
+    /* background-color: #e8faf2; */
     min-height: 100vh;
-    /* display: flex; */
     justify-content: center;
-    padding: 100px;
-
+    padding: 30px;
 }
 
 /* END GENERAL */
@@ -57,11 +56,10 @@ p {
     font-family: "Playpen Sans";
 }
 
-.home-container {
-    background-color: lavender;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
+
+.main-img {
+    border-radius: 50%;
+    filter: drop-shadow(10px 10px 10px grey);
 }
 
 /* END HOME PAGE */
@@ -86,11 +84,7 @@ p {
 /* END EXPERIENCE PAGE */
 
 /* PROJECTS PAGE */
-.projects-container {
-    background-color: lemonchiffon;
-    min-height: 100vh;
-    /* padding: 100px; */
-}
+
 
 /* END PROJECTS PAGE */
 
@@ -125,19 +119,21 @@ p {
 /* something about max width, maybe? */
 .header {
     /* TODO: implement sticky */
-    /* position: sticky;
+    position: sticky;
     top: 0;
-    z-index: 1000; */
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 30px;
     /* padding-left: 200px;
     padding-right: 200px; */
+    background-color: aliceblue;
 }
 
 .logo {
     display: flex;
+    align-items: center;
 }
 
 .header-title,
@@ -147,7 +143,7 @@ p {
     font-size: 28px;
     font-weight: bold;
     font-family: "Playpen Sans";
-    color: #3eb489;
+    color: mediumaquamarine;
     display: flex;
     align-items: center;
 }
@@ -164,7 +160,7 @@ p {
     font-family: "Libre Franklin";
     font-size: 20px;
     font-weight: 600;
-    color: #3eb489;
+    color: mediumaquamarine;
 }
 
 /* TODO: implement custom focus ring */
@@ -185,9 +181,9 @@ p {
 .footer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px;
-    background-color: white;
+    background-color: aliceblue;
 }
 
 .footer-container {
@@ -196,7 +192,7 @@ p {
     flex-direction: row;
     justify-content: space-between;
     column-gap: 20px;
-
+    color: darkslategray
 }
 
 /* font awesome icons in footer */
