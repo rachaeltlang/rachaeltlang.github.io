@@ -35,6 +35,16 @@
     font-size: 36px;
     font-family: "Outfit";
 }
+
+.container {
+    background-color: lightcyan;
+    min-height: 100vh;
+    /* display: flex; */
+    justify-content: center;
+    padding: 100px;
+
+}
+
 /* END GENERAL */
 
 /* HOME PAGE */
@@ -51,6 +61,7 @@
     display: flex;
     justify-content: center;
 }
+
 /* END HOME PAGE */
 
 /* ABOUT PAGE */
@@ -62,7 +73,13 @@
 
 /* EXPERIENCE PAGE */
 
-
+.experience-entry {
+    display: flex;
+    justify-content: left;
+    padding-left: 30px;
+    column-gap: 30px;
+    margin-bottom: 50px;
+}
 
 /* END EXPERIENCE PAGE */
 
@@ -90,18 +107,6 @@
     margin-right: 100px;
 }
 
-
-
-
-
-.container {
-    background-color: lemonchiffon;
-    min-height: 100vh;
-    padding: 100px;
-}
-
-
-
 .content-container {
     margin: 50px;
     padding: 50px;
@@ -109,56 +114,7 @@
     align-items: flex-start;
 }
 
-.about {
-    background-color: lightcyan;
-    min-height: 100vh;
-    justify-content: left;
-}
 
-.experience {
-    background-color: lemonchiffon;
-    min-height: 100vh;
-    display: flex;
-    justify-content: left;
-}
-
-.header {
-    position: sticky;
-    top: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: white;
-}
-
-
-
-.nav-list {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    font-size: 16px;
-}
-
-.header-title {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: #3eb489;
-}
-
-.header-text {
-    text-decoration: none;
-    color: #3eb489;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
 
 .image {
     width: 50px;
@@ -166,14 +122,63 @@
     margin-right: 10px;
 }
 
-.experience-entry {
-    /* background-color: mistyrose; */
+/* HEADER */
+
+.header {
+    position: sticky;
     display: flex;
-    justify-content: left;
-    padding-left: 20px;
-    column-gap: 20px;
-    margin: 30px;
+    align-items: left;
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-title,
+.header-title:hover,
+.header-title:focus {
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Playpen Sans";
+    color: #3eb489;
+    display: flex;
+    align-items: center;
+
+}
+
+.header-list {
+    gap: 20px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.header-tab,
+.header-tab:hover {
+    text-decoration: none;
+    font-family: "Libre Franklin";
+    font-size: 20px;
+    color: #3eb489;
+}
+
+/* TODO: implement custom focus ring */
+/* .header-tab:focus {
+    display: inline-flex;
+    padding: 0.25rem 0.5rem;
+    text-decoration: none;
+    border: 1px solid green;
+    border-radius: 0.25rem;
+    --bs-focus-ring-color: rgba(40, 167, 69, 0.25);
+} */
+
+
+/* END HEADER */
 
 /* FOOTER */
 
@@ -191,6 +196,7 @@
     flex-direction: row;
     justify-content: space-between;
     column-gap: 20px;
+
 }
 
 /* font awesome icons in footer */
