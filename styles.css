@@ -46,6 +46,47 @@ p {
     padding: 30px;
 }
 
+/* built-in bootstrap button styling, copied from documentation */
+/* change from blue to mint-ish green */
+.btn-primary {
+    color: #fff;
+    background-color: mediumaquamarine;
+    border-color: #5ac497;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #49a37e;
+    border-color: #3e8c6c;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(102, 221, 170, 0.5);
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    color: #fff;
+    background-color: mediumaquamarine;
+    border-color: mediumaquamarine;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #3e8c6c;
+    border-color: #3e8c6c;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(102, 221, 170, 0.5);
+}
+
+/* end bootstrap */
 /* END GENERAL */
 
 /* HOME PAGE */
@@ -56,55 +97,14 @@ p {
     font-family: "Shantell Sans";
 }
 
-
 .main-img {
     border-radius: 50%;
     filter: drop-shadow(10px 10px 10px grey);
 }
 
-/* built-in bootstrap button styling, copied from documentation */
-/* change from blue to mint-ish green */
-.btn-primary {
-    color: #fff;
-    background-color: mediumaquamarine;
-    border-color: #5ac497;
-  }
-  
-  .btn-primary:hover {
-    color: #fff;
-    background-color: #49a37e;
-    border-color: #3e8c6c;
-  }
-  
-  .btn-primary:focus, .btn-primary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(102, 221, 170, 0.5);
-  }
-  
-  .btn-primary.disabled, .btn-primary:disabled {
-    color: #fff;
-    background-color: mediumaquamarine;
-    border-color: mediumaquamarine;
-  }
-  
-  .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
-  .show > .btn-primary.dropdown-toggle {
-    color: #fff;
-    background-color: #3e8c6c;
-    border-color: #3e8c6c;
-  }
-  
-  .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
-  .show > .btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgba(102, 221, 170, 0.5);
-  }
-
-/* end bootstrap */
-
-
 /* END HOME PAGE */
 
 /* ABOUT PAGE */
-
 
 
 /* END ABOUT PAGE */
@@ -231,7 +231,8 @@ p {
     flex-direction: row;
     justify-content: space-between;
     column-gap: 20px;
-    color: darkslategray
+    color: darkslategray;
+    /* border-style: solid; */
 }
 
 /* font awesome icons in footer */
