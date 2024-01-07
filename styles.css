@@ -1,13 +1,81 @@
 /* apply to everything */
 * {
-    /* font-size: 100%; */
-    font-family: Helvetica, sans-serif;
+    font-family: "Libre Franklin", sans-serif;
 }
 
+/* FONTS */
+
+/* overall font */
+@font-face {
+    font-family: "Libre Franklin";
+    src: url("https://fonts.googleapis.com/css?family=Libre+Franklin");
+}
+
+/* title font */
+@font-face {
+    font-family: "Outfit";
+    src: url("https://fonts.googleapis.com/css?family=Lobster");
+}
+
+/* handwriting font for "Rachael Lang" */
+@font-face {
+    font-family: "Playpen Sans";
+    src: url("https://fonts.googleapis.com/css?family=Playpen+Sans");
+}
+
+/* END FONTS */
+
+/* GENERAL */
 .margins {
     margin-left: 50px;
     margin-right: 50px;
 }
+
+.h1 {
+    font-size: 36px;
+    font-family: "Outfit";
+}
+/* END GENERAL */
+
+/* HOME PAGE */
+
+/* the "Rachael Lang" text */
+.name {
+    font-size: 60px;
+    font-family: "Playpen Sans";
+}
+
+.home-container {
+    background-color: lavender;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+/* END HOME PAGE */
+
+/* ABOUT PAGE */
+
+
+
+/* END ABOUT PAGE */
+
+
+/* EXPERIENCE PAGE */
+
+
+
+/* END EXPERIENCE PAGE */
+
+/* PROJECTS PAGE */
+.projects-container {
+    background-color: lemonchiffon;
+    min-height: 100vh;
+    padding: 100px;
+}
+
+
+/* END PROJECTS PAGE */
+
 
 .centered-content {
     display: flex;
@@ -22,21 +90,9 @@
     margin-right: 100px;
 }
 
-/* 
-h1 {
-    font-size: 36px;
-}
 
-p {
-    font-size: 18px;
-} */
 
-.home-container {
-    background-color: lavender;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-}
+
 
 .container {
     background-color: lemonchiffon;
@@ -44,11 +100,7 @@ p {
     padding: 100px;
 }
 
-.projects-container {
-    background-color: lemonchiffon;
-    min-height: 100vh;
-    padding: 100px;
-}
+
 
 .content-container {
     margin: 50px;
@@ -61,11 +113,6 @@ p {
     background-color: lightcyan;
     min-height: 100vh;
     justify-content: left;
-}
-
-.about-text {
-    /* margin: 100px; */
-    font-family: "Trebuchet MS";
 }
 
 .experience {
@@ -128,6 +175,8 @@ p {
     margin: 30px;
 }
 
+/* FOOTER */
+
 .footer {
     display: flex;
     align-items: center;
@@ -144,7 +193,13 @@ p {
     column-gap: 20px;
 }
 
-.font-awesome, .font-awesome:visited, .font-awesome:hover, .font-awesome:active {
+/* font awesome icons in footer */
+.font-awesome,
+.font-awesome:visited,
+.font-awesome:hover,
+.font-awesome:active {
     color: mediumaquamarine;
     text-decoration: none;
 }
+
+/* END FOOTER */
