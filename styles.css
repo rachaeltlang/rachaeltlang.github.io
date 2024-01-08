@@ -56,13 +56,13 @@ p {
 }
 
 /* container used by all pages except home */
-.container {
+.page-container {
     min-height: 100vh;
     padding: 30px;
 }
 
 /* change links to mint green */
-.container a {
+.page-container a {
     color: #09a6a6;
 }
 
@@ -253,6 +253,10 @@ p {
 /* FOOTER */
 
 .footer {
+    position: fixed;
+    bottom: 0;
+    /* margin-top: 0; */
+    /* max-width: 100%; */
     display: flex;
     align-items: center;
     justify-content: center;
