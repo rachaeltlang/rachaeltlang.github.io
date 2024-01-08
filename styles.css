@@ -163,8 +163,8 @@ p {
 /* PROJECTS PAGE */
 
 
-/* END PROJECTS PAGE */
 
+/* END PROJECTS PAGE */
 
 .text-container {
     text-align: center;
@@ -180,8 +180,6 @@ p {
     padding: 20px;
     display: flex;
     align-items: flex-start;
-    /* border-style: dotted; */
-    /* for troubleshooting */
 }
 
 .image {
@@ -271,7 +269,6 @@ p {
     justify-content: space-between;
     column-gap: 20px;
     color: darkslategray;
-    /* border-style: solid; */
 }
 
 /* font awesome icons in footer */
