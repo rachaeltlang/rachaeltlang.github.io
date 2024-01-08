@@ -134,6 +134,22 @@ p {
     margin-bottom: 50px;
 }
 
+.skills {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.skills li {
+    margin: 4px;
+    padding: 8px;
+    background-color: #6cc39e;
+    color: #fff;
+    border-radius: 6px;
+}
+
 /* END EXPERIENCE PAGE */
 
 /* PROJECTS PAGE */
@@ -194,11 +210,12 @@ p {
 .header-title:focus {
     text-decoration: none;
     font-size: 28px;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-family: "Shantell Sans";
     color: mediumaquamarine;
     display: flex;
     align-items: center;
+    filter: drop-shadow(1px 1px 1px grey);
 }
 
 .header-list {
