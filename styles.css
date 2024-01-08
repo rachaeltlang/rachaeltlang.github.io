@@ -31,10 +31,12 @@ h1 {
     font-family: "Outfit";
     /* font-weight: bold; */
     line-height: 2;
+    color: mediumturquoise;
 }
 
 h2 {
     font-size: 28px;
+    line-height: 2;
 }
 
 h3 {
@@ -48,7 +50,7 @@ p {
 
 /* container used by all pages except home */
 .container {
-    background-color: #e8faf2;
+    /* background-color: #e8faf2; */
     min-height: 100vh;
     /* justify-content: center; */
     padding: 30px;
@@ -56,7 +58,7 @@ p {
 
 /* change links to mint green */
 .container a {
-    color: darkcyan;
+    color: #09a6a6;
 }
 
 
