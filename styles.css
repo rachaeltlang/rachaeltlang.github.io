@@ -37,12 +37,13 @@ h1 {
     font-family: "Outfit";
     /* font-weight: bold; */
     line-height: 2;
-    color: mediumturquoise;
+    /* color: mediumturquoise; */
+    color: #09a6a6;
 }
 
 h2 {
     font-size: 28px;
-    line-height: 2;
+    line-height: 1.5;
 }
 
 h3 {
@@ -56,9 +57,7 @@ p {
 
 /* container used by all pages except home */
 .container {
-    /* background-color: #e8faf2; */
     min-height: 100vh;
-    /* justify-content: center; */
     padding: 30px;
 }
 
@@ -146,7 +145,7 @@ p {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
+    margin-bottom: 6px;
     padding: 0;
 }
 
