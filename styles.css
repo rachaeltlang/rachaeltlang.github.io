@@ -58,7 +58,7 @@ p {
 /* container used by all pages except home */
 .page-container {
     min-height: 100vh;
-    padding: 30px;
+    padding: 40px;
 }
 
 /* change links to mint green */
@@ -195,13 +195,12 @@ p {
     /* TODO: implement sticky */
     position: sticky;
     top: 0;
-    z-index: 1000;
+    float: left;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px;
-    /* padding-left: 200px;
-    padding-right: 200px; */
+    padding: 20px;
     background-color: aliceblue;
 }
 
@@ -252,11 +251,12 @@ p {
 
 /* FOOTER */
 
+/* TODO: fix the footer covering content */
 .footer {
     position: fixed;
     bottom: 0;
-    /* margin-top: 0; */
-    /* max-width: 100%; */
+    float: left;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
