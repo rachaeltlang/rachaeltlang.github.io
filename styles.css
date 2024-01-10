@@ -192,8 +192,7 @@ p {
 /* TODO: fix margins/padding, current design not responsive */
 /* something about max width, maybe? */
 .header {
-    /* TODO: implement sticky */
-    position: sticky;
+    position: fixed;
     top: 0;
     float: left;
     width: 100%;
@@ -253,7 +252,7 @@ p {
 
 /* TODO: fix the footer covering content */
 .footer {
-    position: fixed;
+    position: sticky;
     bottom: 0;
     float: left;
     width: 100%;
