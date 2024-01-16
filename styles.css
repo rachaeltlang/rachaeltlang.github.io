@@ -35,10 +35,10 @@
 h1 {
     font-size: 36px;
     font-family: "Outfit";
-    /* font-weight: bold; */
-    line-height: 2;
-    /* color: mediumturquoise; */
+    font-weight: bold;
+    line-height: 1;
     color: #09a6a6;
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -55,17 +55,18 @@ p {
     line-height: 1.75;
 }
 
+/* change links to mint green */
+a {
+    color: #09a6a6;
+}
+
 /* container used by all pages except home */
 .page-container {
     min-height: 100vh;
     padding: 40px;
+    /* workaround for when header covers content */
+    /* margin-top: 80px; */
 }
-
-/* change links to mint green */
-.page-container a {
-    color: #09a6a6;
-}
-
 
 /* built-in bootstrap button styling, copied from documentation */
 /* change from blue to mint-ish green */
@@ -116,6 +117,7 @@ p {
 .name {
     font-size: 60px;
     font-family: "Shantell Sans";
+    line-height: 1;
 }
 
 .main-img {
@@ -138,7 +140,7 @@ p {
     justify-content: left;
     padding-left: 30px;
     column-gap: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .skills {
@@ -176,6 +178,7 @@ p {
 /* side-by-side arrangement of elements */
 .content-container {
     margin: 50px;
+    margin-top: 80px;
     padding: 20px;
     display: flex;
     align-items: flex-start;
@@ -192,15 +195,17 @@ p {
 /* TODO: fix margins/padding, current design not responsive */
 /* something about max width, maybe? */
 .header {
-    position: fixed;
+    /* for header to always be visible at top of page */
+    /* position: fixed; */
+    position: sticky;
     top: 0;
-    float: left;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
     background-color: aliceblue;
+    margin-bottom: 20px;
 }
 
 .logo {
@@ -254,13 +259,13 @@ p {
 .footer {
     position: sticky;
     bottom: 0;
-    float: left;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
     background-color: aliceblue;
+    margin-top: 20px;
 }
 
 .footer-container {
