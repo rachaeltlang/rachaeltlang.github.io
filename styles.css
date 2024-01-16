@@ -60,7 +60,7 @@ a {
     color: #09a6a6;
 }
 
-/* container used by all pages except home */
+/* container used by all pages */
 .page-container {
     min-height: 100vh;
     padding: 40px;
@@ -125,6 +125,31 @@ a {
     filter: drop-shadow(10px 10px 10px grey);
 }
 
+.text-container {
+    text-align: center;
+    padding: 20px;
+    margin: 40px;
+    /* border-style: solid; */
+    /* for troubleshooting */
+}
+
+/* side-by-side arrangement of elements */
+.content-container {
+    margin-top: 80px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-style: solid; */
+    /* for troubleshooting */
+}
+
+.image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
 /* END HOME PAGE */
 
 /* ABOUT PAGE */
@@ -166,29 +191,6 @@ a {
 
 
 /* END PROJECTS PAGE */
-
-.text-container {
-    text-align: center;
-    padding: 20px;
-    margin: 40px;
-    /* border-style: solid; */
-    /* for troubleshooting */
-}
-
-/* side-by-side arrangement of elements */
-.content-container {
-    margin: 50px;
-    margin-top: 80px;
-    padding: 20px;
-    display: flex;
-    align-items: flex-start;
-}
-
-.image {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-}
 
 /* HEADER */
 
