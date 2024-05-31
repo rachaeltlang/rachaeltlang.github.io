@@ -65,7 +65,7 @@ a {
     min-height: 100vh;
     padding: 40px;
     /* workaround for when header covers content */
-    /* margin-top: 80px; */
+    margin-top: 80px;
 }
 
 /* built-in bootstrap button styling, copied from documentation */
@@ -148,6 +148,7 @@ a {
     width: 50px;
     height: 50px;
     margin-right: 10px;
+    
 }
 
 /* END HOME PAGE */
@@ -178,9 +179,10 @@ a {
 
 .skills li {
     margin: 4px;
-    padding: 8px;
-    background-color: #6cc39e;
-    color: #fff;
+    padding: 4px;
+    background-color: #fff;
+    color: #569c7e;
+    border: 2px solid #569c7e;
     border-radius: 6px;
 }
 
@@ -198,8 +200,8 @@ a {
 /* something about max width, maybe? */
 .header {
     /* for header to always be visible at top of page */
-    /* position: fixed; */
-    position: sticky;
+    position: fixed;
+    /* position: sticky; */
     top: 0;
     width: 100%;
     display: flex;
@@ -261,7 +263,6 @@ a {
 .footer {
     position: sticky;
     bottom: 0;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
