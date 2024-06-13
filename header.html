@@ -20,6 +20,96 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Franklin">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shantell+Sans">
+
+    <!-- Custom styles for sidebar -->
+    <style>
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            overflow-y: auto;
+            display: none;
+            /* Initially hidden */
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .header-content {
+            padding: 20px;
+        }
+
+        .header-content h1 {
+            margin-bottom: 20px;
+        }
+
+        /* Hamburger icon styles */
+        .hamburger {
+            display: none;
+            /* Initially hidden */
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+            z-index: 1000;
+            /* Ensure hamburger icon appears above other content */
+        }
+
+        .hamburger-bar {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 5px 0;
+            transition: transform 0.3s ease;
+        }
+
+        /* Rotate bars for open/close effect */
+        .open .bar1 {
+            transform: rotate(-45deg) translate(-7px, 7px);
+        }
+
+        .open .bar2 {
+            opacity: 0;
+        }
+
+        .open .bar3 {
+            transform: rotate(45deg) translate(-6px, -6px);
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                display: none;
+                /* Hide header on small screens */
+            }
+
+            .sidebar {
+                display: block;
+                /* Show sidebar on small screens */
+            }
+
+            .hamburger {
+                display: block;
+                /* Show hamburger icon on small screens */
+            }
+        }
+    </style>
 </head>
 
 <body>

@@ -113,6 +113,28 @@ a {
 
 /* HOME PAGE */
 
+/* for mobile view */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+}
+
+/* mobile: hide profile image */
+@media (max-width: 768px) {
+    .main-img {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .name {
+        font-size: 40px;
+    }
+}
+
+
+
 /* the "Rachael Lang" text */
 .name {
     font-size: 60px;
@@ -330,3 +352,5 @@ a {
 }
 
 /* END FOOTER */
+
+/* TESTING ZONE */
