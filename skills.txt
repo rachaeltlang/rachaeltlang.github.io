@@ -1,0 +1,56 @@
+Programming Languages
+- Java
+- Python
+- JavaScript
+- TypeScript
+- C/C++
+- R
+
+exposure
+- Bash
+- Assembly
+- Rust
+- Haskell
+- Kotlin
+
+
+Front-End
+- Bootstrap
+- HTML
+- CSS
+- React
+- React Native
+
+Back-End
+Node.js?
+SQL?
+PostgreSQL?
+MySQL?
+SQLite?
+Django?
+MongoDB
+
+
+Android
+
+
+Other
+VS Code
+Linux
+Git
+Vim/Nano
+Latex
+
+ML/AI
+NLP
+Docker
+Apache Kafta
+
+
+Soft Skills
+
+
+Spoken Languages
+English - native, fluent
+Mandarin Chinese (Taiwan) - native, fluent
+Spanish (Latin America) - self-taught, intermediate
