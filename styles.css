@@ -63,7 +63,7 @@ a {
 /* container used by all pages */
 .page-container {
     min-height: 100vh;
-    padding: 40px;
+    padding: 60px;
     /* workaround for when header covers content */
     margin-top: 80px;
 }
@@ -132,8 +132,6 @@ a {
         font-size: 40px;
     }
 }
-
-
 
 /* the "Rachael Lang" text */
 .name {
@@ -306,16 +304,6 @@ a {
     font-weight: 600;
     color: mediumaquamarine;
 }
-
-/* TODO: implement custom focus ring */
-/* .header-tab:focus {
-    display: inline-flex;
-    padding: 0.25rem 0.5rem;
-    text-decoration: none;
-    border: 1px solid green;
-    border-radius: 0.25rem;
-    --bs-focus-ring-color: rgba(40, 167, 69, 0.25);
-} */
 
 /* END HEADER */
 
