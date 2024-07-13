@@ -48,7 +48,7 @@
 
 
         // for popup
-        function myFunction() {
+        function popup() {
             var popup = document.getElementById("popup");
             popup.classList.toggle("show");
         }
@@ -57,59 +57,116 @@
 </head>
 
 <body>
-
-
-
     <header id="header"></header>
-
     <div class="page-container">
         <h1>Skills</h1>
         <p>This page is under development.</p>
 
+        <!-- option 1 -->
+        <div class="skills-matrix">
+            <div class="skill" data-skill="Java">Java</div>
+            <div class="skill" data-skill="Python">Python</div>
+            <div class="skill" data-skill="R">R</div>
+            <div class="skill" data-skill="Assembly">Assembly</div>
+            <div class="skill" data-skill="Bash">Bash</div>
+            <div class="skill" data-skill="C">C</div>
+            <div class="skill" data-skill="C++">C++</div>
+            <div class="skill" data-skill="Haskell">Haskell</div>
+            <div class="skill" data-skill="Rust">Rust</div>
+            <div class="skill" data-skill="JavaScript">JavaScript</div>
+            <div class="skill" data-skill="TypeScript">TypeScript</div>
+            <div class="skill" data-skill="HTML">HTML</div>
+            <div class="skill" data-skill="CSS">CSS</div>
+            <div class="skill" data-skill="Sass">Sass</div>
+            <div class="skill" data-skill="React">React</div>
+            <div class="skill" data-skill="Kotlin">Kotlin</div>
+            <div class="skill" data-skill="VS Code">VS Code</div>
+            <div class="skill" data-skill="RStudio">RStudio</div>
+            <div class="skill" data-skill="IntelliJ">IntelliJ</div>
+            <div class="skill" data-skill="PyCharm">PyCharm</div>
+            <div class="skill" data-skill="Android Studio">Android Studio</div>
+            <div class="skill" data-skill="Tableau">Tableau</div>
+            <div class="skill" data-skill="Figma">Figma</div>
+            <div class="skill" data-skill="Unity">Unity</div>
+        </div>
 
+        <br></br>
+
+        <!-- option 2 -->
         <h2>Programming Languages</h2>
 
         <h3>Proficient</h3>
         <a style="color:white" class="btn btn-primary">Java</a>
         <a style="color:white" class="btn btn-primary">Python</a>
-        <a style="color:white" class="btn btn-primary">JavaScript</a>
-        <a style="color:white" class="btn btn-primary">TypeScript</a>
         <a style="color:white" class="btn btn-primary">R</a>
+
         <br></br>
-        <h3>Exposure</h3>
+
+        <h3>Familiar</h3>
         <a style="color:white" class="btn btn-primary">Assembly</a>
         <a style="color:white" class="btn btn-primary">Bash</a>
         <a style="color:white" class="btn btn-primary">C</a>
         <a style="color:white" class="btn btn-primary">C++</a>
         <a style="color:white" class="btn btn-primary">Haskell</a>
-        <a style="color:white" class="btn btn-primary">Kotlin</a>
         <a style="color:white" class="btn btn-primary">Rust</a>
-        
+
         <br></br>
 
         <h2>Front-End Development</h2>
+        <a style="color:white" class="btn btn-primary">JavaScript</a>
+        <a style="color:white" class="btn btn-primary">TypeScript</a>
+        <a style="color:white" class="btn btn-primary">HTML</a>
+        <a style="color:white" class="btn btn-primary">CSS</a>
+        <a style="color:white" class="btn btn-primary">Sass</a>
 
+        <br></br>
+
+        <h3>Frameworks</h3>
+        <a style="color:white" class="btn btn-primary">React</a>
+
+        <!-- <h3>Developer Tools</h3> -->
 
         <br></br>
 
         <h2>Back-End Development</h2>
+        <a style="color:white" class="btn btn-primary">Kotlin</a>
 
+        <br></br>
+
+        <h2>Developer Tools</h2>
+        <a style="color:white" class="btn btn-primary">VS Code</a>
+        <a style="color:white" class="btn btn-primary">RStudio</a>
+        <a style="color:white" class="btn btn-primary">IntelliJ</a>
+        <a style="color:white" class="btn btn-primary">PyCharm</a>
+        <a style="color:white" class="btn btn-primary">Android Studio</a>
+        <a style="color:white" class="btn btn-primary">Tableau</a>
+        <a style="color:white" class="btn btn-primary">Adobe Creative Cloud</a>
+        <a style="color:white" class="btn btn-primary">Figma</a>
+        <a style="color:white" class="btn btn-primary">Unity</a>
 
         <br></br>
 
         <h2>Spoken Languages</h2>
 
         <!-- TODO: fix popups -->
-        <div class="popup" onclick="myFunction()"><a style="color:white" class="btn btn-primary">English</a>
+        <div class="popup" onclick="popup()"><a style="color:white" class="btn btn-primary">English</a>
             <span class="popuptext" id="popup">Native, fluent</span>
         </div>
-        <div class="popup" onclick="myFunction()"><a style="color:white" class="btn btn-primary">Chinese</a>
+        <div class="popup" onclick="popup()"><a style="color:white" class="btn btn-primary">Chinese</a>
             <span class="popuptext" id="popup">Native, fluent</span>
         </div>
-        <div class="popup" onclick="myFunction()"><a style="color:white" class="btn btn-primary">Spanish</a>
-            <span class="popuptext" id="popup">Native, fluent</span>
+        <div class="popup" onclick="popup()"><a style="color:white" class="btn btn-primary">Spanish</a>
+            <span class="popuptext" id="popup">Intermediate</span>
         </div>
 
+        <script>
+            // TODO: use a pop-up instead of alert
+            document.querySelectorAll('.skill').forEach(element => {
+                element.addEventListener('click', () => {
+                    alert(`More details about ${element.dataset.skill}`);
+                });
+            });
+        </script>
     </div>
     <footer id="footer"></footer>
 </body>

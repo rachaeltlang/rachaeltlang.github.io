@@ -42,6 +42,7 @@ h1 {
 }
 
 h2 {
+    font-weight: bold;
     font-size: 28px;
     line-height: 1.5;
 }
@@ -261,10 +262,10 @@ a {
     position: relative;
     display: inline-block;
     cursor: pointer;
-  }
-  
-  /* The actual popup (appears on top) */
-  .popup .popuptext {
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
     visibility: hidden;
     width: 160px;
     background-color: #e485a8;
@@ -277,10 +278,10 @@ a {
     bottom: 125%;
     left: 50%;
     margin-left: -80px;
-  }
-  
-  /* Popup arrow */
-  .popup .popuptext::after {
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -289,25 +290,35 @@ a {
     border-width: 5px;
     border-style: solid;
     border-color: #e485a8 transparent transparent transparent;
-  }
-  
-  /* Toggle this class when clicking on the popup container (hide and show the popup) */
-  .popup .show {
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
     visibility: visible;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 0.5s;
-  }
-  
-  /* Add animation (fade in the popup) */
-  @-webkit-keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
-  
-  @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 
 /* END SKILLS PAGE */
 
@@ -397,5 +408,55 @@ a {
 }
 
 /* END FOOTER */
+
+/* SKILLS */
+.skills-matrix {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.skill {
+    padding: 10px;
+    border: 1px solid mediumaquamarine; /* Match the border color of the button */
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center; /* Center text horizontally */
+    display: flex;      /* Enable flexbox layout */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    color: #fff; /* Text color for normal state */
+    background-color: mediumaquamarine; /* Background color for normal state */
+  }
+  
+  .skill:hover {
+    background-color: #49a37e; /* Background color on hover */
+    border-color: #3e8c6c; /* Border color on hover */
+  }
+  
+  .skill:focus,
+  .skill.focus {
+    box-shadow: 0 0 0 0.2rem rgba(102, 221, 170, 0.5); /* Focus box-shadow */
+  }
+  
+  .skill.disabled,
+  .skill:disabled {
+    color: #fff; /* Text color for disabled state */
+    background-color: mediumaquamarine; /* Background color for disabled state */
+    border-color: mediumaquamarine; /* Border color for disabled state */
+  }
+  
+  .skill:not(:disabled):not(.disabled):active,
+  .skill:not(:disabled):not(.disabled).active {
+    background-color: #3e8c6c; /* Background color when active */
+    border-color: #3e8c6c; /* Border color when active */
+  }
+  
+  .skill:not(:disabled):not(.disabled):active:focus,
+  .skill:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(102, 221, 170, 0.5); /* Focus box-shadow when active */
+  }
+
+/* ENDSKILLS */
 
 /* TESTING ZONE */
