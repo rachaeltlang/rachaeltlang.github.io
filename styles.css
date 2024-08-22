@@ -32,6 +32,10 @@
 /* END FONTS */
 
 /* GENERAL */
+body {
+    background-color: #f2f2f2;
+}
+
 h1 {
     font-size: 36px;
     font-family: "Outfit";
@@ -72,13 +76,13 @@ a {
 /* built-in bootstrap button styling, copied from documentation */
 /* change from blue to mint-ish green */
 .btn-primary {
-    color: #fff;
+    color: #ffffff;
     background-color: mediumaquamarine;
     border-color: #5ac497;
 }
 
 .btn-primary:hover {
-    color: #fff;
+    color: #ffffff;
     background-color: #49a37e;
     border-color: #3e8c6c;
 }
@@ -90,7 +94,7 @@ a {
 
 .btn-primary.disabled,
 .btn-primary:disabled {
-    color: #fff;
+    color: #ffffff;
     background-color: mediumaquamarine;
     border-color: mediumaquamarine;
 }
@@ -98,7 +102,7 @@ a {
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled).active,
 .show>.btn-primary.dropdown-toggle {
-    color: #fff;
+    color: #ffffff;
     background-color: #3e8c6c;
     border-color: #3e8c6c;
 }
@@ -201,7 +205,6 @@ a {
 .skills li {
     margin: 4px;
     padding: 4px;
-    background-color: #fff;
     color: #569c7e;
     border: 2px solid #569c7e;
     border-radius: 6px;
@@ -240,7 +243,6 @@ a {
 .collapsible-content {
     padding-top: 8px;
     padding-left: 16px;
-    background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -269,7 +271,7 @@ a {
     visibility: hidden;
     width: 160px;
     background-color: #e485a8;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     border-radius: 6px;
     padding: 4px 0;
@@ -336,7 +338,7 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: aliceblue;
+    background-color: #ddf7f8;
     margin-bottom: 20px;
 }
 
@@ -385,7 +387,7 @@ a {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     margin-top: 20px;
 }
 
@@ -425,7 +427,7 @@ a {
     display: flex;      /* Enable flexbox layout */
     align-items: center; /* Center text vertically */
     justify-content: center; /* Center text horizontally */
-    color: #fff; /* Text color for normal state */
+    color: #ffffff; /* Text color for normal state */
     background-color: mediumaquamarine; /* Background color for normal state */
   }
   
@@ -441,7 +443,7 @@ a {
   
   .skill.disabled,
   .skill:disabled {
-    color: #fff; /* Text color for disabled state */
+    color: #ffffff; /* Text color for disabled state */
     background-color: mediumaquamarine; /* Background color for disabled state */
     border-color: mediumaquamarine; /* Border color for disabled state */
   }
@@ -457,6 +459,6 @@ a {
     box-shadow: 0 0 0 0.2rem rgba(102, 221, 170, 0.5); /* Focus box-shadow when active */
   }
 
-/* ENDSKILLS */
+/* END SKILLS */
 
 /* TESTING ZONE */
