@@ -12,9 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#000000" />
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <link rel="apple-touch-icon" href="/assets/favicon.ico" />
 
     <!-- fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Franklin">
@@ -26,9 +25,9 @@
     <header class="header">
         <!-- navigate to home when user clicks on logo or website title -->
         <div class="logo">
-            <a href="/"> <img src="assets/favicon.ico" alt="croissant favicon" class="image" href="/"
+            <a href="/"> <img src="/assets/favicon.ico" alt="croissant favicon" class="image" href="/"
                     style="width:36px;height:36px;" /></a>
-            <a class="header-title" href="/">Rachael Lang</a>
+            <a class="header-title" href="/">郎宗婷</a>
         </div>
 
         <div>
@@ -39,9 +38,30 @@
                 <a class="header-tab" href="assets/RachaelLangResume.pdf" target="_blank"
                     alt="Rachael Lang's Resume">Resume</a>
                 <!-- to automatically download resume: download="RachaelLangResume" -->
+                <button id="btn-en">English</button>
+                <button id="btn-zh">中文</button>
             </nav>
         </div>
     </header>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btnEn = document.getElementById('btn-en')
+            const btnZh = document.getElementById('btn-zh')
+
+            btnEn.addEventListener('click', () => {
+                alert('Button clicked!')
+                window.location.assign('/projects.html') // or the dynamic switchLang you had
+            })
+
+            btnZh.addEventListener('click', () => {
+                // show it for a split second, then navigate
+                alert('going to 中文')
+                // or: setTimeout(() => location.assign('/zh/projects.html'), 0)
+                window.location.assign('/zh/projects.html')
+            })
+        })
+    </script>
 </body>
 
 </html>
