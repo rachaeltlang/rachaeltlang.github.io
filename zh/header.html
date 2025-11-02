@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#000000" />
 
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
 
     <!-- fonts -->
@@ -27,41 +27,20 @@
         <div class="logo">
             <a href="/"> <img src="/assets/favicon.ico" alt="croissant favicon" class="image" href="/"
                     style="width:36px;height:36px;" /></a>
-            <a class="header-title" href="/">郎宗婷</a>
+            <a class="header-title" href="/zh/index.html">郎宗婷</a>
         </div>
 
         <div>
             <nav class="header-list">
-                <a class="header-tab" href="about.html">About</a>
-                <a class="header-tab" href="experience.html">Experience</a>
-                <a class="header-tab" href="projects.html">Projects</a>
+                <a class="header-tab" href="about.html">關於</a>
+                <a class="header-tab" href="experience.html">經驗</a>
+                <a class="header-tab" href="projects.html">作品</a>
                 <a class="header-tab" href="assets/RachaelLangResume.pdf" target="_blank"
-                    alt="Rachael Lang's Resume">Resume</a>
+                    alt="Rachael Lang's Resume">履歷</a>
                 <!-- to automatically download resume: download="RachaelLangResume" -->
-                <button id="btn-en">English</button>
-                <button id="btn-zh">中文</button>
             </nav>
         </div>
     </header>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const btnEn = document.getElementById('btn-en')
-            const btnZh = document.getElementById('btn-zh')
-
-            btnEn.addEventListener('click', () => {
-                alert('Button clicked!')
-                window.location.assign('/projects.html') // or the dynamic switchLang you had
-            })
-
-            btnZh.addEventListener('click', () => {
-                // show it for a split second, then navigate
-                alert('going to 中文')
-                // or: setTimeout(() => location.assign('/zh/projects.html'), 0)
-                window.location.assign('/zh/projects.html')
-            })
-        })
-    </script>
 </body>
 
 </html>
