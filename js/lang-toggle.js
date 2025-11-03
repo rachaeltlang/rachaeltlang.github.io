@@ -21,3 +21,4 @@
         window.location.href = newPath + url.search + url.hash
     }
 })()
+
