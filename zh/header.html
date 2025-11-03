@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head>
     <meta charset="utf-8">
@@ -19,13 +19,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Franklin">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shantell+Sans">
+    
+    <script src="/js/header.js" defer></script>
 </head>
 
 <body>
     <header class="header">
         <!-- navigate to home when user clicks on logo or website title -->
         <div class="logo">
-            <a href="/"> <img src="/assets/favicon.ico" alt="croissant favicon" class="image" href="/"
+            <a href="/zh/index.html"> <img src="/assets/favicon.ico" alt="croissant favicon" class="image" href="/"
                     style="width:36px;height:36px;" /></a>
             <a class="header-title" href="/zh/index.html">郎宗婷</a>
         </div>
@@ -35,12 +37,18 @@
                 <a class="header-tab" href="about.html">關於</a>
                 <a class="header-tab" href="experience.html">經驗</a>
                 <a class="header-tab" href="projects.html">作品</a>
-                <a class="header-tab" href="assets/RachaelLangResume.pdf" target="_blank"
+                <a class="header-tab" href="/assets/RachaelLangResume.pdf" target="_blank"
                     alt="Rachael Lang's Resume">履歷</a>
                 <!-- to automatically download resume: download="RachaelLangResume" -->
+                <button type="button" onclick="switchLanguage('en')">English</button>
+                <button type="button" onclick="switchLanguage('zh')">中文</button>
+                <button type="button" onclick="switchLanguage('es')">Español</button>
             </nav>
         </div>
     </header>
+
+
+   
 </body>
 
 </html>
