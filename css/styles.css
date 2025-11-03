@@ -351,7 +351,6 @@ a {
 .header-title:focus {
     text-decoration: none;
     font-size: 28px;
-    /* font-weight: bold; */
     font-family: "Shantell Sans";
     color: white;
     display: flex;
@@ -363,6 +362,7 @@ a {
     gap: 20px;
     list-style: none;
     display: flex;
+    position: relative;
 }
 
 .header-tab,
@@ -372,6 +372,63 @@ a {
     font-size: 20px;
     font-weight: 400;
     color: white;
+    cursor: pointer;
+}
+
+/* dropdown menu */
+.header-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-list ul li {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* hide dropdown initially */
+.header-list ul li ul.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #92ceba;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 0 0 8px 8px;
+    cursor: pointer;
+}
+
+/* show dropdown on hover */
+.header-list ul li:hover ul.dropdown-content {
+    display: block;
+}
+
+/* dropdown links */
+.header-list ul li ul.dropdown-content li {
+    display: block;
+}
+
+.header-list ul li ul.dropdown-content li a {
+    display: block;
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #92ceba;
+}
+
+.header-list ul li ul.dropdown-content li a:hover {
+    background-color: #78bda5;
+    /* hover color */
+    color: #fff;
+}
+
+/* caret icon spacing */
+.header-list .dropdown i {
+    margin-left: 6px;
+    font-size: 14px;
 }
 
 /* END HEADER */
@@ -419,44 +476,60 @@ a {
 
 .skill {
     padding: 10px;
-    border: 1px solid mediumaquamarine; /* Match the border color of the button */
+    border: 1px solid mediumaquamarine;
+    /* Match the border color of the button */
     border-radius: 5px;
     cursor: pointer;
-    text-align: center; /* Center text horizontally */
-    display: flex;      /* Enable flexbox layout */
-    align-items: center; /* Center text vertically */
-    justify-content: center; /* Center text horizontally */
-    color: #ffffff; /* Text color for normal state */
-    background-color: mediumaquamarine; /* Background color for normal state */
-  }
-  
-  .skill:hover {
-    background-color: #49a37e; /* Background color on hover */
-    border-color: #3e8c6c; /* Border color on hover */
-  }
-  
-  .skill:focus,
-  .skill.focus {
-    box-shadow: 0 0 0 0.2rem rgba(102, 221, 170, 0.5); /* Focus box-shadow */
-  }
-  
-  .skill.disabled,
-  .skill:disabled {
-    color: #ffffff; /* Text color for disabled state */
-    background-color: mediumaquamarine; /* Background color for disabled state */
-    border-color: mediumaquamarine; /* Border color for disabled state */
-  }
-  
-  .skill:not(:disabled):not(.disabled):active,
-  .skill:not(:disabled):not(.disabled).active {
-    background-color: #3e8c6c; /* Background color when active */
-    border-color: #3e8c6c; /* Border color when active */
-  }
-  
-  .skill:not(:disabled):not(.disabled):active:focus,
-  .skill:not(:disabled):not(.disabled).active:focus {
-    box-shadow: 0 0 0 0.2rem rgba(102, 221, 170, 0.5); /* Focus box-shadow when active */
-  }
+    text-align: center;
+    /* Center text horizontally */
+    display: flex;
+    /* Enable flexbox layout */
+    align-items: center;
+    /* Center text vertically */
+    justify-content: center;
+    /* Center text horizontally */
+    color: #ffffff;
+    /* Text color for normal state */
+    background-color: mediumaquamarine;
+    /* Background color for normal state */
+}
+
+.skill:hover {
+    background-color: #49a37e;
+    /* Background color on hover */
+    border-color: #3e8c6c;
+    /* Border color on hover */
+}
+
+.skill:focus,
+.skill.focus {
+    box-shadow: 0 0 0 0.2rem rgba(102, 221, 170, 0.5);
+    /* Focus box-shadow */
+}
+
+.skill.disabled,
+.skill:disabled {
+    color: #ffffff;
+    /* Text color for disabled state */
+    background-color: mediumaquamarine;
+    /* Background color for disabled state */
+    border-color: mediumaquamarine;
+    /* Border color for disabled state */
+}
+
+.skill:not(:disabled):not(.disabled):active,
+.skill:not(:disabled):not(.disabled).active {
+    background-color: #3e8c6c;
+    /* Background color when active */
+    border-color: #3e8c6c;
+    /* Border color when active */
+}
+
+.skill:not(:disabled):not(.disabled):active:focus,
+.skill:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(102, 221, 170, 0.5);
+    /* Focus box-shadow when active */
+}
 
 /* END SKILLS */
 
