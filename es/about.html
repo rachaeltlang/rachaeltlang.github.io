@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Rachael Lang | Sobre</title>
+
+    <meta name="description" content="Rachael Lang's personal website created using HTML and CSS" />
+    <meta name="author" content="Rachael Lang">
+    <meta name="keywords" content="software engineer, computer science, personal website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000" />
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/favicon.ico" />
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Franklin">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shantell+Sans">
+
+    <!-- font awesome icons (for footer) -->
+    <script src="https://kit.fontawesome.com/a7ff71eb5b.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // load header and footer using fetch
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+    <!-- to toggle between languages -->
+    <script src="/js/lang-toggle.js" defer></script>
+</head>
+
+<body>
+    <header id="header"></header>
+    <div class="page-container">
+        <h1>¡Hola! ¡Mucho gusto!</h1>
+        <p>Soy ingeniera de software especializada en desarrollo front-end, apasionada por transformar sistemas
+            complejos en experiencias claras, accesibles y fáciles de usar. Mis principales fortalezas técnicas incluyen
+            React, Java y Python, y me enfoco en optimizar procesos y reducir la carga cognitiva, asegurando que la
+            tecnología empodere a las personas en lugar de abrumarlas.</p>
+        <p>En mayo de 2025 me gradué con una <a href="https://www.cs.wisc.edu/grad/programs/pmp/"
+                target="_blank">maestría profesional</a> en Ciencias de la Computación en la <a
+                href="https://www.wisc.edu/ " target="_blank">Universidad de
+                Wisconsin–Madison</a>. Anteriormente realicé prácticas como ingeniera de software en <a
+                href="https://www.intel.com/" target="_blank">Intel</a>, <a href="https://corporate.target.com/"
+                target="_blank">Target</a>, y <a href="https://www.jmsmucker.com/" target="_blank">The J.M. Smucker
+                Company</a>. También tengo una licenciatura en <a href="https://www.cs.wisc.edu/"
+                target="_blank">Ciencias de la Computación</a>, con especializaciones en
+            <a href="https://stat.wisc.edu/data-science-certificate/" target="_blank">Ciencia de Datos</a> y <a
+                href="https://chicla.wisc.edu/ " target="_blank">Estudios Chicanos y Latinos</a>, otorgada por la misma
+            universidad. ¡Puedes leer lo que el
+            Departamento de Ciencias de la Computación <a
+                href="https://www.cs.wisc.edu/2023/12/21/computer-sciences-celebrates-december-graduates/#:~:text=For%20Rachael%20Lang,users"
+                target="_blank">escribió</a> sobre mí!
+        </p>
+        <p>
+            Ya sea aprendiendo un nuevo idioma, preparando una taza de té o tejiendo una bufanda, me atraen los procesos que
+            requieren paciencia, cuidado y atención al detalle. Disfruto transformar piezas individuales en patrones
+            coherentes, encontrar orden dentro de la complejidad y convertirlo en algo funcional y elegante. Estas
+            rutinas cotidianas reflejan mi enfoque hacia la ingeniería: construir cuidadosamente capa por capa hasta
+            crear experiencias intuitivas y fluidas.
+        <p>Lo que más me entusiasma es la oportunidad de conectar a las personas y las ideas. A través de software
+            inclusivo, la narración y la exploración cultural, busco tender puentes y fomentar la comprensión entre
+            comunidades diversas.
+        <p><a style="color:white" href="https://www.linkedin.com/in/rachaeltlang/" class="btn btn-primary">Encuéntrame en LinkedIn</a></p>
+        </p><a style="color:white" href="/experience.html" class="btn btn-primary">Lee sobre mi experiencia</a></p>
+    </div>
+    <footer id="footer"></footer>
+</body>
+
+</html>
