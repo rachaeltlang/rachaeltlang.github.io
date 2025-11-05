@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Rachael Lang | Blog</title>
+
+    <meta name="description" content="Rachael Lang's personal website created using HTML and CSS" />
+    <meta name="author" content="Rachael Lang">
+    <meta name="keywords" content="software engineer, computer science, personal website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000" />
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/favicon.ico" />
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Franklin">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shantell+Sans">
+
+    <!-- font awesome icons (for footer) -->
+    <script src="https://kit.fontawesome.com/a7ff71eb5b.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // load header and footer using fetch
+        fetch("/header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+
+        fetch("/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+    <!-- to toggle between languages -->
+    <script src="/js/lang-toggle.js" defer></script>
+</head>
+
+<body>
+    <header id="header"></header>
+    <div class="page-container">
+        <h1>How Every Taiwanese Receipt Is a Hidden Lottery Ticket</h1>
+        <p>By Rachael Lang</p>
+        <p>Originally published November 5, 2025</p>
+
+        <img style="width: 600px" src="/assets/images/blog/receipts/example-receipts.jpg"
+            alt="A image of various Taiwanese receipts" />
+
+        <p></p>
+        <p>Whenever I make a purchase, I always ask for the receipt. Primarily because I’m a data nerd and I have a huge
+            spreadsheet where I keep an itemized list of every purchase I’ve made for the past 4 years (and counting).
+            But, in Taiwan, it’s a no brainer for anyone. For every purchase you make, businesses are legally required
+            to give you a “uniform invoice” (統一發票 tǒngyī fāpiào). This invoice, which I’ll be referring to as a
+            “receipt,” has a unique alphanumeric string that doubles as a lottery number.</p>
+
+        <h2>The Lottery System</h2>
+        <p>Every two months, the Ministry of Finance announces 5 winning lottery numbers. If you have a receipt with a
+            number that matches the last 3-8 digits, you get a cash prize. The smallest prize starts at NT$200 (around
+            $7 US dollars) and goes all the way up to NT$10 million (around $323,000 US dollars).</p>
+        <p>Growing up, this was a bi-monthly routine in my household. On the 25th of every odd-numbered month (January,
+            March, May, etc.), my dad and I would sit down with a pile of the receipts we’ve collected. The way he
+            taught me was to sort them into 10 piles based on the last digit of each number. Then, we’d pull up the
+            winning numbers and sift through the corresponding pile to see if any of our numbers matched.</p>
+        <p>I don’t have the official numbers on the chances of winning, but I can say, as a family of four that made
+            what I would consider to be an “average” amount of purchases, we would win maybe 2-4 of the smallest prizes
+            every two months. In retrospect, it’s not much. But as a kid, that extra NT$200 was a huge deal.</p>
+        <p>In the past, I used to have to go to the post office to redeem winning receipts. As much as I love postage
+            stamps and the postal system, I don’t frequent the post office particularly often, so this was always a nice
+            excuse to make a visit. I remember the first time after they changed the redemption location, I went all the
+            way to the post office, waited forever in line, just to be redirected to 7-Eleven. Add that to the long list
+            of things you can do at 7-Eleven (more on that in another post).</p>
+
+        <img style="width: 600px" src="/assets/images/blog/receipts/winning-numbers.png"
+            alt="A screenshot of winning receipt lottery numbers from the Ministry of Finance" /><p></p>
+        <h2>Its Origins</h2>
+        <p>I never questioned this system until a non-Taiwanese friend asked me about it. In the moment, I was a little
+            stunned. I knew this wasn’t a worldwide thing, but I’ve also never really thought about why it was a thing
+            at all. As my parents explained to me, the government established a nation-wide standardized process for
+            invoicing to prevent tax evasion by businesses, increase national revenue by promoting consumer spending,
+            and to overall facilitate the process of tax reporting for businesses. So by giving consumers an incentive
+            to ask for their receipt, businesses were encouraged to keep each of their transactions on the books. </p>
+        <p>While nearly all businesses in Taiwan are legally required to issue consumers a receipt, there are a few
+            exceptions. Small businesses that make less than NT$200,000 (around $6,500 US dollars) and certain types of
+            businesses such as soy milk restaurants, buffet restaurants, bento box restaurants are exempt from providing
+            receipts.</p>
+        <p>If you’re traveling to Taiwan and don’t expect to stay until the winning numbers are announced, which happens
+            25 days after the bi-monthly period, consider donating your receipts. Donation boxes are commonly found near
+            cash registers, where the winnings are donated to charities.</p>
+
+        <h2>Going Digital</h2>
+        <p>In recent years, the personal electronic barcode has grown in popularity. Also known as a cloud invoice, this
+            is an account where consumers can digitally store all of their receipts. The best part is, at the end of
+            each cycle, the system automatically checks the numbers for you and any prizes are directly deposited to
+            your bank account. When making a purchase, the cashier prompts you for your 載具 (barcode), which is
+            technically pronounced zài jù but colloquially pronounced zǎi jù. To further streamline the process, you can
+            add your barcode to various methods of payment such as your EasyCard or credit card, and your receipt will
+            automatically be stored without you having to pull up your barcode.</p>
+        <p>I’m a big fan of the eco-friendly aspect of not printing out additional pieces of paper and convenience of
+            not having to stuff long receipts into my wallet. But I do miss the tradition of sorting, checking, and
+            redeeming receipts. It feels like a uniquely Taiwanese experience.</p>
+    </div>
+    <footer id="footer"></footer>
+</body>
+
+</html>
