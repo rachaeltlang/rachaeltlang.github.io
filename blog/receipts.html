@@ -35,7 +35,7 @@
 
     <script>
         // load header and footer using fetch
-        fetch("/header.html")
+        fetch("header.html")
             .then(response => response.text())
             .then(data => {
                 document.getElementById("header").innerHTML = data;
@@ -61,8 +61,8 @@
 
         <img style="width: 600px" src="/assets/images/blog/receipts/example-receipts.jpg"
             alt="A image of various Taiwanese receipts" />
-
         <p></p>
+        
         <p>Whenever I make a purchase, I always ask for the receipt. Primarily because I’m a data nerd and I have a huge
             spreadsheet where I keep an itemized list of every purchase I’ve made for the past 4 years (and counting).
             But, in Taiwan, it’s a no brainer for anyone. For every purchase you make, businesses are legally required
@@ -87,7 +87,9 @@
             of things you can do at 7-Eleven (more on that in another post).</p>
 
         <img style="width: 600px" src="/assets/images/blog/receipts/winning-numbers.png"
-            alt="A screenshot of winning receipt lottery numbers from the Ministry of Finance" /><p></p>
+            alt="A screenshot of winning receipt lottery numbers from the Ministry of Finance" />
+        <p></p>
+
         <h2>Its Origins</h2>
         <p>I never questioned this system until a non-Taiwanese friend asked me about it. In the moment, I was a little
             stunned. I knew this wasn’t a worldwide thing, but I’ve also never really thought about why it was a thing

@@ -35,7 +35,7 @@
 
     <script>
         // load header and footer using fetch
-        fetch("/header.html")
+        fetch("header.html")
             .then(response => response.text())
             .then(data => {
                 document.getElementById("header").innerHTML = data;
@@ -54,12 +54,15 @@
 
 <body>
     <header id="header"></header>
+    
     <div class="page-container">
         <h1>¡Hola! ¡Mucho gusto!</h1>
+
         <p>Soy ingeniera de software especializada en desarrollo front-end, apasionada por transformar sistemas
             complejos en experiencias claras, accesibles y fáciles de usar. Mis principales fortalezas técnicas incluyen
             React, Java y Python, y me enfoco en optimizar procesos y reducir la carga cognitiva, asegurando que la
             tecnología empodere a las personas en lugar de abrumarlas.</p>
+
         <p>En mayo de 2025 me gradué con una <a href="https://www.cs.wisc.edu/grad/programs/pmp/"
                 target="_blank">maestría profesional</a> en Ciencias de la Computación en la <a
                 href="https://www.wisc.edu/ " target="_blank">Universidad de
@@ -75,18 +78,25 @@
                 href="https://www.cs.wisc.edu/2023/12/21/computer-sciences-celebrates-december-graduates/#:~:text=For%20Rachael%20Lang,users"
                 target="_blank">escribió</a> sobre mí!
         </p>
+
         <p>
-            Ya sea aprendiendo un nuevo idioma, preparando una taza de té o tejiendo una bufanda, me atraen los procesos que
+            Ya sea aprendiendo un nuevo idioma, preparando una taza de té o tejiendo una bufanda, me atraen los procesos
+            que
             requieren paciencia, cuidado y atención al detalle. Disfruto transformar piezas individuales en patrones
             coherentes, encontrar orden dentro de la complejidad y convertirlo en algo funcional y elegante. Estas
             rutinas cotidianas reflejan mi enfoque hacia la ingeniería: construir cuidadosamente capa por capa hasta
             crear experiencias intuitivas y fluidas.
-        <p>Lo que más me entusiasma es la oportunidad de conectar a las personas y las ideas. A través de software
+        
+            <p>Lo que más me entusiasma es la oportunidad de conectar a las personas y las ideas. A través de software
             inclusivo, la narración y la exploración cultural, busco tender puentes y fomentar la comprensión entre
             comunidades diversas.
-        <p><a style="color:white" href="https://www.linkedin.com/in/rachaeltlang/" class="btn btn-primary">Encuéntrame en LinkedIn</a></p>
-        </p><a style="color:white" href="/experience.html" class="btn btn-primary">Lee sobre mi experiencia</a></p>
+        
+            <p><a style="color:white" href="https://www.linkedin.com/in/rachaeltlang/" class="btn btn-primary">Encuéntrame
+                en LinkedIn</a></p>
+        
+            </p><a style="color:white" href="/experience.html" class="btn btn-primary">Lee sobre mi experiencia</a></p>
     </div>
+
     <footer id="footer"></footer>
 </body>
 

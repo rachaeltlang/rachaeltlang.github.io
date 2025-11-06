@@ -14,8 +14,10 @@
         // build the new path based on the selected language
         const newPath =
             lang === 'en'
-                ? '/' + parts.join('/')                // english → no folder prefix
-                : '/' + lang + '/' + parts.join('/')   // append zh/ or es/
+                // english → no folder prefix
+                ? '/' + parts.join('/')
+                // append zh/ or es/
+                : '/' + lang + '/' + parts.join('/')
 
         // redirect to the new URL
         window.location.href = newPath + url.search + url.hash

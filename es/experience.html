@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <link rel="apple-touch-icon" href="/assets/favicon.ico" />
+
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -34,7 +35,7 @@
 
     <script>
         // load header and footer using fetch
-        fetch("/header.html")
+        fetch("header.html")
             .then(response => response.text())
             .then(data => {
                 document.getElementById("header").innerHTML = data;
@@ -55,7 +56,7 @@
     <header id="header"></header>
 
     <div class="page-container">
-        <h1>Some Things I've Done</h1>
+        <h1>Unas cosas que he hecho</h1>
 
         <!-- Target -->
         <div class="experience-entry">
@@ -93,18 +94,9 @@
                     practices in an Agile ecosystem.</p>
             </div>
             <div>
-                <!-- <img style="width: 300px" src="/assets/images/experience-images/target1.png"
-                    alt="Rachael and Bullseye" /> -->
                 <img style="width: 300px" src="/assets/images/experience-images/target-showcase.png"
                     alt="Rachael at the intern showcase" />
             </div>
-
-            <!-- <button type="button" class="collapsible">My Intern Showcase Trifold Poster</button>
-                <div class="collapsible-content">
-                    <img style="width: 90%; display: block; margin-top: auto;"
-                        src="/assets/images/experience-images/target-showcase.png" alt="Rachael's Intern Showcase Poster">
-                </div>
-                <script src="/js/experience.js"></script> -->
         </div>
 
         <!-- Intel -->
@@ -157,6 +149,7 @@
                     by 50%, leading to a substantial decrease in operational costs and a marked improvement in overall
                     efficiency.
                 </p>
+
                 <!-- collapsible component -->
                 <button type="button" class="collapsible">My Intern Showcase Trifold Poster</button>
                 <div class="collapsible-content">
@@ -192,7 +185,8 @@
                     actionable insights, I was able to identify bottlenecks and areas for improvement within our
                     processes.</p>
                 <p>In my role as Help Desk Supervisor, I supervised a team of over 100 employees, ensuring high
-                    standards of quality and efficiency for a seamless customer experience. I also collaborated closely with
+                    standards of quality and efficiency for a seamless customer experience. I also collaborated closely
+                    with
                     advanced support teams to resolve complex technical issues and provide comprehensive training to
                     Help Desk agents, significantly improving case handling and customer service. My contributions have
                     included improving system performance and operations, for which I was recognized as Agent of the

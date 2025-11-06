@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <link rel="apple-touch-icon" href="/assets/favicon.ico" />
+
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -34,7 +35,7 @@
 
     <script>
         // load header and footer using fetch
-        fetch("/header.html")
+        fetch("header.html")
             .then(response => response.text())
             .then(data => {
                 document.getElementById("header").innerHTML = data;
@@ -46,6 +47,9 @@
                 document.getElementById("footer").innerHTML = data;
             });
     </script>
+
+    <!-- to toggle between languages -->
+    <script src="/js/lang-toggle.js" defer></script>
 </head>
 
 <body>
@@ -80,7 +84,8 @@
 
         <!-- DormNomNom -->
         <h3>DormNomNom</h3>
-        <p>This was a semester-long final project I completed on a team of four for the Foundations of Mobile Systems and
+        <p>This was a semester-long final project I completed on a team of four for the Foundations of Mobile Systems
+            and
             Applications course at <a href="https://wisc.edu/" target="_blank">UW-Madison</a>. DormNomNom is an Android
             app designed for students living in University Housing at UW-Madison. The app utilizes the API University
             Housing uses to display the menu at the dining halls. The menu provides nutritional information, and
