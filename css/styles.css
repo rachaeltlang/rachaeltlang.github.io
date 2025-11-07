@@ -68,9 +68,9 @@ a {
 /* container used by all pages */
 .page-container {
     min-height: 100vh;
-    padding: 60px;
+    padding: 80px;
     /* workaround for when header covers content */
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 /* built-in bootstrap button styling, copied from documentation */
@@ -151,22 +151,32 @@ a {
 }
 
 .text-container {
-    text-align: center;
+    text-align: left;
     padding: 40px;
-    margin: 40px;
-    /* border-style: solid; */
+    /* margin: 40px; */
     /* for troubleshooting */
+    /* border-style: solid; */
 }
 
-/* side-by-side arrangement of elements */
-.content-container {
+/* side-by-side arrangement of elements on homepage (index) */
+.homepage-container {
     margin-top: 80px;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border-style: solid; */
     /* for troubleshooting */
+    /* border-style: solid; */
+}
+
+/* side-by-side arrangement of elements on homepage (index) */
+.two-column-container {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* for troubleshooting */
+    /* border-style: solid; */
 }
 
 .image {
@@ -388,18 +398,18 @@ a {
 
 /* keep dropdown closed by default */
 .header-list ul li ul.dropdown-content {
-  display: none;
-  position: absolute;
-  right: 0;
-  left: auto;
-  top: 100%;
-  background-color: #92ceba;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  border-radius: 0 0 8px 8px;
-  z-index: 1000;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    display: none;
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: 100%;
+    background-color: #92ceba;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 8px 8px;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 /* show dropdown on hover */
@@ -445,6 +455,7 @@ a {
     padding: 20px;
     /* background-color: #dfe2e1; */
     margin-top: 20px;
+    border-top: 0.1mm solid lightgrey;
 }
 
 .footer-container {
@@ -476,59 +487,59 @@ a {
 
 .skill {
     padding: 10px;
+    /* match the border color of the button */
     border: 1px solid mediumaquamarine;
-    /* Match the border color of the button */
     border-radius: 5px;
     cursor: pointer;
+    /* center text horizontally */
     text-align: center;
-    /* Center text horizontally */
+    /* enable flexbox layout */
     display: flex;
-    /* Enable flexbox layout */
+    /* center text vertically */
     align-items: center;
-    /* Center text vertically */
+    /* center text horizontally */
     justify-content: center;
-    /* Center text horizontally */
+    /* text color for normal state */
     color: #ffffff;
-    /* Text color for normal state */
+    /* background color for normal state */
     background-color: mediumaquamarine;
-    /* Background color for normal state */
 }
 
 .skill:hover {
+    /* background color on hover */
     background-color: #49a37e;
-    /* Background color on hover */
+    /* border color on hover */
     border-color: #3e8c6c;
-    /* Border color on hover */
 }
 
 .skill:focus,
 .skill.focus {
+    /* focus box-shadow */
     box-shadow: 0 0 0 0.2rem rgba(102, 221, 170, 0.5);
-    /* Focus box-shadow */
 }
 
 .skill.disabled,
 .skill:disabled {
+    /* text color for disabled state */
     color: #ffffff;
-    /* Text color for disabled state */
+    /* background color for disabled state */
     background-color: mediumaquamarine;
-    /* Background color for disabled state */
+    /* border color for disabled state */
     border-color: mediumaquamarine;
-    /* Border color for disabled state */
 }
 
 .skill:not(:disabled):not(.disabled):active,
 .skill:not(:disabled):not(.disabled).active {
+    /* background color when active */
     background-color: #3e8c6c;
-    /* Background color when active */
+    /* border color when active */
     border-color: #3e8c6c;
-    /* Border color when active */
 }
 
 .skill:not(:disabled):not(.disabled):active:focus,
 .skill:not(:disabled):not(.disabled).active:focus {
+    /* focus box-shadow when active */
     box-shadow: 0 0 0 0.2rem rgba(102, 221, 170, 0.5);
-    /* Focus box-shadow when active */
 }
 
 /* END SKILLS */
