@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="utf-8">
@@ -35,23 +35,22 @@
                     <a class="header-tab" href="projects.html">Projects</a>
                     <a class="header-tab" href="/blog.html">Blog</a>
                     <a class="header-tab" href="assets/RachaelLangResume.pdf" target="_blank"
-                        alt="Rachael Lang's Resume">Resume</a>
-                    <!-- to automatically download resume: download="RachaelLangResume" -->
+                        alt="Rachael Lang's Resume" aria-label="Download Rachael's Resume">Resume</a>
 
                     <!-- language globe icon and dropdown list -->
                     <li class="dropdown">
-                        <a href="#" class="header-tab"><i class="fa-solid fa-globe"></i></a>
+                        <a href="#" class="header-tab" aria-label="Toggle language"><i class="fa-solid fa-globe"></i></a>
                         <ul class="dropdown-content">
                             <li><a onclick="switchLanguage('en')">English</a></li>
-                            <li><a onclick="switchLanguage('zh')">中文</a></li>
-                            <li><a onclick="switchLanguage('es')">Español</a></li>
+                            <li><a onclick="switchLanguage('zh')">繁體中文</a></li>
+                            <li><a onclick="switchLanguage('es')">español</a></li>
                         </ul>
                     </li>
 
-                    <!-- light/dark mode toggle -->
-                    <!-- <a href="#" id="themeToggle" class="header-tab">
+                    <!-- light/dark mode toggle --> 
+                    <a href="#" id="themeToggle" class="header-tab" aria-label="Change to dark theme">
                         <i class="fa-solid fa-moon"></i>
-                    </a> -->
+                    </a>
                 </ul>
             </nav>
         </div>
