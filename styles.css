@@ -114,6 +114,7 @@ h2 {
 }
 
 h3 {
+    margin-top: 20px;
     font-size: 24px;
 }
 
@@ -256,7 +257,7 @@ a {
     justify-content: left;
     padding-left: 30px;
     column-gap: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .skills {
