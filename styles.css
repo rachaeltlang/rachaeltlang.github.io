@@ -198,11 +198,15 @@ a {
     }
 }
 
-/* the "Rachael Lang" text */
-.name {
-    font-size: 60px;
-    font-family: "Shantell Sans";
-    line-height: 1;
+/* my custom Rachael font */
+/* except it's really ugly so it's not being used */
+@font-face {
+    font-family: "RachaelFont";
+    src: url("/assets/fonts/Rachael-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    font-size: xx-large;
 }
 
 .main-img {
@@ -394,8 +398,6 @@ a {
 
 /* HEADER */
 
-/* TODO: fix margins/padding, current design not responsive */
-/* something about max width, maybe? */
 .header {
     /* for header to always be visible at top of page */
     position: fixed;
