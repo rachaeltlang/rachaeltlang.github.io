@@ -2,11 +2,10 @@
 :root {
     /* brand */
     --brand-400: #09a6a6;
-    /* your current link/mint */
-    --brand-500: #49a37e;
-    /* hover-ish */
-    --brand-600: #3e8c6c;
+    /* hover */
+    --brand-500: #078787;
     /* active */
+    --brand-500: #078787;
 
     /* light surfaces & text (your current look) */
     --bg: #f2f2f2;
@@ -36,7 +35,6 @@ html[data-theme="dark"] {
     /* improves native controls */
     --brand-400: #22d3b6;
     --brand-500: #19bda2;
-    --brand-600: #119983;
 
     --bg: #0c1214;
     --surface-1: #11191c;
