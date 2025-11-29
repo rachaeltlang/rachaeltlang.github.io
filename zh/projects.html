@@ -26,23 +26,11 @@
     <!-- font awesome icons (for footer) -->
     <script src="https://kit.fontawesome.com/a7ff71eb5b.js" crossorigin="anonymous"></script>
 
-    <script>
-        // load header and footer using fetch
-        fetch("header.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("header").innerHTML = data;
-            });
+    <!-- load header + footer -->
+    <script src="/js/layout.js" defer></script>
 
-        fetch("footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer").innerHTML = data;
-            });
-    </script>
-
-    <!-- to toggle between languages -->
-    <script src="/js/lang-toggle.js" defer></script>
+    <!-- font awesome icons (for footer) -->
+    <script src="https://kit.fontawesome.com/a7ff71eb5b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -90,17 +78,18 @@
 
         <!-- Living Body of Work -->
         <h3>作品集</h3>
-            <p>在 Target 工作期間，我開發了一個作品集，旨在作為績效評估和定期溝通的成績單。我以導師提供的模板為基礎，熟練了 Git
-                版本控制，並拓展了我的職業人脈。我清楚地記錄並展示了開發過程，展現了出色的技術溝通能力。我還透過編輯 Sass
-                文件設計並自訂了一個獨特的主題，創建了一個用戶友好且個性化的介面，可用於個人、領導和導師指導。該工具託管在 Target 的
-                內部平台上，但提供演示影片供參考。</p>
-            <a style="color:white" href="projects/motif-demo-video.mp4" target="_blank" class="btn btn-primary">點擊此處觀看示範影片</a>
+        <p>在 Target 工作期間，我開發了一個作品集，旨在作為績效評估和定期溝通的成績單。我以導師提供的模板為基礎，熟練了 Git
+            版本控制，並拓展了我的職業人脈。我清楚地記錄並展示了開發過程，展現了出色的技術溝通能力。我還透過編輯 Sass
+            文件設計並自訂了一個獨特的主題，創建了一個用戶友好且個性化的介面，可用於個人、領導和導師指導。該工具託管在 Target 的
+            內部平台上，但提供演示影片供參考。</p>
+        <a style="color:white" href="projects/motif-demo-video.mp4" target="_blank"
+            class="btn btn-primary">點擊此處觀看示範影片</a>
 
-            <!-- Badger Bakery -->
-            <h3>獾麵包店</h3>
-            <p>獾麵包店是一個 React Native 應用程式，它調用自訂 API 以取得烘焙食品數據，然後將數據展示給使用者。我實現了分頁、
-                數量增減、計算訂單總額和顯示提示框等功能。該應用程式已使用 <a href="https://expo.dev/" target="_blank">Expo Go</a> 進行測試。</p>
-            <a style="color:white" href="projects/hw7.mp4" target="_blank" class="btn btn-primary">點擊此處觀看示範影片</a>
+        <!-- Badger Bakery -->
+        <h3>獾麵包店</h3>
+        <p>獾麵包店是一個 React Native 應用程式，它調用自訂 API 以取得烘焙食品數據，然後將數據展示給使用者。我實現了分頁、
+            數量增減、計算訂單總額和顯示提示框等功能。該應用程式已使用 <a href="https://expo.dev/" target="_blank">Expo Go</a> 進行測試。</p>
+        <a style="color:white" href="projects/hw7.mp4" target="_blank" class="btn btn-primary">點擊此處觀看示範影片</a>
     </div>
     <footer id="footer"></footer>
 </body>

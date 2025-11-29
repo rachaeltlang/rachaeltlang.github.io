@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-   <meta charset="utf-8">
+    <meta charset="utf-8">
     <title>Rachael Lang | Blog</title>
 
     <meta name="description" content="Rachael Lang's personal website created using HTML and CSS" />
@@ -23,36 +23,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Outfit&family=Shantell+Sans&display=swap"
         rel="stylesheet" />
 
-    <!-- font awesome icons (for footer) -->
-    <script src="https://kit.fontawesome.com/a7ff71eb5b.js" crossorigin="anonymous"></script>
-
-    <script>
-        // load header and footer using fetch
-        fetch("/header.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("header").innerHTML = data;
-            });
-
-        fetch("footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer").innerHTML = data;
-            });
-    </script>
-
+    <!-- load header + footer -->
+    <script src="/js/layout.js" defer></script>
     <!-- to toggle between languages -->
     <script src="/js/lang-toggle.js" defer></script>
+    <!-- font awesome icons (for footer) -->
+    <script src="https://kit.fontawesome.com/a7ff71eb5b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header id="header"></header>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    
+
     <div class="page-container">
         <h1>Rachael's Musings</h1>
-        <p><a href="/blog/how-every-taiwanese-receipt-is-a-hidden-lottery-ticket.html">How Every Taiwanese Receipt Is a Hidden Lottery Ticket</a></p>
-    
+        <p><a href="/blog/how-every-taiwanese-receipt-is-a-hidden-lottery-ticket.html">How Every Taiwanese Receipt Is a
+                Hidden Lottery Ticket</a></p>
+
     </div>
     <footer id="footer"></footer>
 </body>
