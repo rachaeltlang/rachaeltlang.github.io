@@ -219,6 +219,7 @@ a {
     /* border-style: solid; */
 }
 
+
 /* side-by-side arrangement of elements on homepage (index) */
 .homepage-container {
     margin-top: 80px;
@@ -273,6 +274,11 @@ a {
     border: 2px solid #569c7e;
     /* border-radius: 6px; */
 }
+
+.caption {
+    margin-top: 15px;
+}
+
 
 /* collapsible section */
 .collapsible {
