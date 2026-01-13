@@ -298,8 +298,6 @@ a {
 .collapsible:after {
     /* unicode for + */
     content: "\02795";
-    font-size: 16px;
-    color: white;
     float: right;
 }
 
