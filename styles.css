@@ -1,4 +1,4 @@
-/* theme tokens as provided by chatgpt, TODO: check colors */
+/* theme tokens, TODO: check colors */
 :root {
     /* brand */
     --brand-400: #09a6a6;
@@ -7,7 +7,7 @@
     /* active */
     --brand-500: #078787;
 
-    /* light surfaces & text (your current look) */
+    /* light surfaces & text */
     --bg: #f2f2f2;
     --surface-1: #ffffff;
     --surface-2: #f7f7f7;
@@ -15,7 +15,7 @@
 
     --text-1: #111111;
     --text-2: #444444;
-    --link: var(--brand-400);
+    --link: #187c9a;
 
     /* states */
     --focus-ring: rgba(102, 221, 170, 0.5);
@@ -94,6 +94,7 @@ html[data-theme="dark"] {
 body {
     background: var(--bg);
     color: var(--text-1);
+    line-height: 1.6;
 }
 
 h1 {
@@ -101,24 +102,26 @@ h1 {
     font-family: "Outfit";
     font-weight: bold;
     line-height: 1;
-    color: #09a6a6;
+    color: var(--brand-400);
     margin-bottom: 20px;
+    line-height: 1.25;
 }
 
 h2 {
     font-weight: bold;
     font-size: 28px;
-    line-height: 1.5;
+    line-height: 1.6
 }
 
 h3 {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     font-size: 24px;
+    line-height: 1.6;
 }
 
 p {
     font-size: 18px;
-    line-height: 1.75;
+    line-height: 1.6;
 }
 
 /* change links to mint green */
@@ -140,6 +143,7 @@ a {
     background-color: var(--brand-400);
     border-color: var(--brand-400);
     color: #fff;
+    margin-bottom: 10px;
 }
 
 .btn-primary:hover {
