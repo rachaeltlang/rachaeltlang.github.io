@@ -1,8 +1,7 @@
 <header class="header">
     <!-- navigate to home when user clicks on logo or website title -->
     <div class="logo">
-        <a href="/">
-            <img src="/assets/favicon.ico" alt="croissant favicon" class="image" href="/"
+        <a href="/"> <img src="/assets/favicon.ico" alt="croissant favicon" class="image" href="/"
                 style="width:36px;height:36px;" /></a>
         <a class="header-title" href="/">Rachael Lang</a>
     </div>
@@ -17,13 +16,16 @@
                 <a class="header-tab" href="assets/RachaelLangResume.pdf" target="_blank" alt="Rachael Lang's Resume"
                     aria-label="Download Rachael's Resume">Resume</a>
 
-                <!-- language globe icon and dropdown list -->
+                <!-- desktop language globe icon and dropdown list -->
                 <li class="dropdown">
-                    <a href="#" class="header-tab" aria-label="Toggle language"><i class="fa-solid fa-globe"></i></a>
-                    <ul class="dropdown-content">
-                        <li><a onclick="switchLanguage('en')">English</a></li>
-                        <li><a onclick="switchLanguage('zh')">繁體中文</a></li>
-                        <li><a onclick="switchLanguage('es')">español</a></li>
+                    <button type="button" class="header-tab lang-toggle" aria-label="Language menu">
+                        <i class="fa-solid fa-globe"></i>
+                    </button>
+
+                    <ul class="dropdown-content" aria-label="Choose language">
+                        <li><button type="button" onclick="switchLanguage('en')">English</button></li>
+                        <li><button type="button" onclick="switchLanguage('zh')">繁體中文</button></li>
+                        <li><button type="button" onclick="switchLanguage('es')">español</button></li>
                     </ul>
                 </li>
 

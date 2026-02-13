@@ -16,13 +16,16 @@
                 <li><a class="header-tab" href="/assets/RachaelLangResume.pdf" target="_blank"
                         alt="Rachael Lang's Resume" aria-label="下載郎宗婷的履歷">履歷</a></li>
 
-                <!-- language globe icon and dropdown list -->
+                <!-- desktop language globe icon and dropdown list -->
                 <li class="dropdown">
-                    <a href="#" class="header-tab" aria-label="Toggle language"><i class="fa-solid fa-globe"></i></a>
-                    <ul class="dropdown-content">
-                        <li><a onclick="switchLanguage('en')">English</a></li>
-                        <li><a onclick="switchLanguage('zh')">繁體中文</a></li>
-                        <li><a onclick="switchLanguage('es')">español</a></li>
+                    <button type="button" class="header-tab lang-toggle" aria-label="Language menu">
+                        <i class="fa-solid fa-globe"></i>
+                    </button>
+
+                    <ul class="dropdown-content" aria-label="Choose language">
+                        <li><button type="button" onclick="switchLanguage('en')">English</button></li>
+                        <li><button type="button" onclick="switchLanguage('zh')">繁體中文</button></li>
+                        <li><button type="button" onclick="switchLanguage('es')">español</button></li>
                     </ul>
                 </li>
             </ul>
@@ -53,6 +56,7 @@
                 <!-- divider bar -->
                 <li class="drawer-sep"></li>
 
+                <!-- language toggle section -->
                 <li class="drawer-lang">
                     <details>
                         <summary class="drawer-lang-summary" aria-label="Choose language">

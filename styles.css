@@ -425,6 +425,17 @@ a {
     cursor: pointer;
 }
 
+.lang-toggle {
+    background: none;
+    border: 0;
+    /* padding: 0px; */
+    cursor: pointer;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
 /* dropdown menu */
 .header-list ul {
     /* remove bullets */
@@ -462,18 +473,30 @@ a {
     display: block;
 }
 
+/* also open dropdown when tabbing into it (keyboard) */
+.header-list ul li.dropdown:focus-within ul.dropdown-content {
+    display: block;
+}
+
 /* dropdown links */
 .header-list ul li ul.dropdown-content li {
     width: 100%;
 }
 
-.header-list ul li ul.dropdown-content li a {
+.header-list ul li ul.dropdown-content li a,
+.header-list ul li ul.dropdown-content li button {
     display: block;
+    width: 100%;
     padding: 10px 16px;
     color: #fff;
     cursor: pointer;
+    background: none;
+    border: 0;
+    text-align: left;
+    font: inherit;
 }
 
+/* when language options are hovered over */
 .header-list ul li ul.dropdown-content li:hover {
     background-color: #78bda5;
     color: #fff;
@@ -559,7 +582,8 @@ html.nav-open .nav-overlay {
 }
 
 /* bold and underline the current page in the drawer nav links list */
-a[aria-current="page"] {
+a[<script src="/js/layout.js" defer></script>
+<script src="/js/nav.js" defer></script>="page"] {
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 4px;
