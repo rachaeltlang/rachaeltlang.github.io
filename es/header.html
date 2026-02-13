@@ -48,11 +48,23 @@
                 <li><a href="projects.html">Proyectos</a></li>
                 <li><a href="assets/RachaelLangResume.pdf" target="_blank">Currículum</a></li>
 
+                <!-- divider bar -->
                 <li class="drawer-sep"></li>
 
-                <li><button onclick="switchLanguage('en')">English</button></li>
-                <li><button onclick="switchLanguage('zh')">繁體中文</button></li>
-                <li><button onclick="switchLanguage('es')">español</button></li>
+                <!-- language toggle section -->
+                <li class="drawer-lang">
+                    <details>
+                        <summary class="drawer-lang-summary" aria-label="Choose language">
+                            <i class="fa-solid fa-globe"></i>
+                        </summary>
+
+                        <ul class="drawer-lang-list">
+                            <li><button type="button" onclick="switchLanguage('en')">English</button></li>
+                            <li><button type="button" onclick="switchLanguage('zh')">繁體中文</button></li>
+                            <li><button type="button" onclick="switchLanguage('es')">español</button></li>
+                        </ul>
+                    </details>
+                </li>
             </ul>
         </aside>
     </div>

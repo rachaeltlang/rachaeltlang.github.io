@@ -664,10 +664,40 @@ html.nav-open .nav-drawer {
 
 /* END HEADER */
 
+/* GLOBE/LANGUAGE MENU IN MOBILE OVERLAY */
+
+.drawer-lang-summary {
+  display: flex;
+  padding: 10px 10px;
+}
+
+.drawer-lang-list {
+  list-style: none;
+  margin: 8px 0 0 0;
+  padding: 0px;
+  display: grid;
+  gap: 8px;
+}
+
+/* END GLOBE/LANGUAGE MENU */
+
 /* prevent page scroll when mobile drawer is open */
 html.nav-open,
 body.nav-open {
     overflow: hidden;
+}
+
+/* focus rings off by default */
+*:focus,
+*:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* show focus rings when accessibility mode is enabled */
+.a11y-focus *:focus-visible {
+  outline: 3px solid var(--brand-400);
+  outline-offset: 3px;
 }
 
 /* FOOTER */
