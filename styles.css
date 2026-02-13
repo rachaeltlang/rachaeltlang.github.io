@@ -56,7 +56,6 @@ html[data-theme="dark"] {
     --popup-tip: #b96a8a;
 }
 
-
 /* apply to everything */
 * {
     font-family: "Libre Franklin", sans-serif;
@@ -182,26 +181,6 @@ a {
 
 /* HOME PAGE */
 
-/* for mobile view */
-@media (max-width: 768px) {
-    .content-container {
-        flex-direction: column;
-    }
-}
-
-/* mobile: hide profile image */
-@media (max-width: 768px) {
-    .main-img {
-        display: none;
-    }
-}
-
-@media (max-width: 768px) {
-    .name {
-        font-size: 40px;
-    }
-}
-
 /* my custom Rachael font */
 /* except it's really ugly so it's not being used */
 @font-face {
@@ -226,7 +205,6 @@ a {
     /* border-style: solid; */
 }
 
-
 /* side-by-side arrangement of elements on homepage (index) */
 .homepage-container {
     margin-top: 80px;
@@ -234,8 +212,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* for troubleshooting */
-    /* border-style: solid; */
 }
 
 /* side-by-side arrangement of elements on homepage (index) */
@@ -244,8 +220,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* for troubleshooting */
-    /* border-style: solid; */
 }
 
 .image {
@@ -279,13 +253,11 @@ a {
     padding: 4px;
     color: #569c7e;
     border: 2px solid #569c7e;
-    /* border-radius: 6px; */
 }
 
 .caption {
     margin-top: 15px;
 }
-
 
 /* collapsible section */
 .collapsible {
@@ -327,11 +299,7 @@ a {
 
 /* END EXPERIENCE PAGE */
 
-/* PROJECTS PAGE */
-
-/* END PROJECTS PAGE */
-
-/* SKILLS PAGE */
+/* SKILLS PAGE (not live) */
 
 /* popup container, from https://www.w3schools.com/howto/howto_js_popup.asp */
 .popup {
@@ -647,7 +615,6 @@ html.nav-open .nav-drawer {
 }
 
 @media (max-width: 768px) {
-
     /* hide the desktop link row */
     .header-nav {
         display: none;

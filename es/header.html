@@ -1,37 +1,59 @@
-<!DOCTYPE html>
-<html lang="es">
+<header class="header">
+    <!-- navigate to home when user clicks on logo or website title -->
+    <div class="logo">
+        <a href="/es"> <img src="/assets/favicon.ico" alt="croissant favicon" class="image" href="/"
+                style="width:36px;height:36px;" /></a>
+        <a class="header-title" href="/es">Rachael Lang</a>
+    </div>
 
-<body>
-    <header class="header">
-        <!-- navigate to home when user clicks on logo or website title -->
-        <div class="logo">
-            <a href="/es"> <img src="/assets/favicon.ico" alt="croissant favicon" class="image" href="/"
-                    style="width:36px;height:36px;" /></a>
-            <a class="header-title" href="/es">Rachael Lang</a>
-        </div>
+    <div class="header-row">
+        <nav class="header-list header-nav" aria-label="Primary">
+            <ul>
+                <a class="header-tab" href="about.html">Sobre</a>
+                <a class="header-tab" href="experience.html">Experiencia</a>
+                <a class="header-tab" href="projects.html">Proyectos</a>
+                <a class="header-tab" href="/assets/RachaelLangResume.pdf" target="_blank" alt="Rachael Lang's Resume"
+                    aria-label="Descarga el currículum de Rachael">Currículum</a>
 
-        <div>
-            <nav class="header-list">
-                <ul>
-                    <a class="header-tab" href="about.html">Sobre</a>
-                    <a class="header-tab" href="experience.html">Experiencia</a>
-                    <a class="header-tab" href="projects.html">Proyectos</a>
-                    <a class="header-tab" href="/assets/RachaelLangResume.pdf" target="_blank"
-                        alt="Rachael Lang's Resume" aria-label="Descarga el currículum de Rachael">Currículum</a>
+                <!-- language globe icon and dropdown list -->
+                <li class="dropdown">
+                    <a href="#" class="header-tab" aria-label="Toggle language"><i class="fa-solid fa-globe"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a onclick="switchLanguage('en')">English</a></li>
+                        <li><a onclick="switchLanguage('zh')">繁體中文</a></li>
+                        <li><a onclick="switchLanguage('es')">español</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
 
-                    <!-- language globe icon and dropdown list -->
-                    <li class="dropdown">
-                        <a href="#" class="header-tab" aria-label="Toggle language"><i class="fa-solid fa-globe"></i></a>
-                        <ul class="dropdown-content">
-                            <li><a onclick="switchLanguage('en')">English</a></li>
-                            <li><a onclick="switchLanguage('zh')">繁體中文</a></li>
-                            <li><a onclick="switchLanguage('es')">español</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-</body>
+        <!-- mobile hamburger button -->
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="mobile-drawer"
+            aria-expanded="false">
+            <span class="nav-toggle-bars"></span>
+        </button>
 
-</html>
+        <!-- screen overlay -->
+        <div class="nav-overlay"></div>
+
+        <!-- mobile drawer -->
+        <aside id="mobile-drawer" class="nav-drawer">
+            <div class="nav-drawer-header">
+                <button class="nav-close" data-nav-close aria-label="Close menu">✕</button>
+            </div>
+
+            <ul class="nav-drawer-list">
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="experience.html">Experiencia</a></li>
+                <li><a href="projects.html">Proyectos</a></li>
+                <li><a href="assets/RachaelLangResume.pdf" target="_blank">Currículum</a></li>
+
+                <li class="drawer-sep"></li>
+
+                <li><button onclick="switchLanguage('en')">English</button></li>
+                <li><button onclick="switchLanguage('zh')">繁體中文</button></li>
+                <li><button onclick="switchLanguage('es')">español</button></li>
+            </ul>
+        </aside>
+    </div>
+</header>
