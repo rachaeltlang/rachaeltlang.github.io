@@ -29,7 +29,14 @@ document.addEventListener("DOMContentLoaded", () => {
         .then((response) => response.text())
         .then((html) => {
             const headerElement = document.getElementById("header");
-            if (headerElement) headerElement.innerHTML = html;
+            if (headerElement) {
+                headerElement.innerHTML = html;
+
+                // initialize mobile nav after the injected header exists
+                if (window.initNav) {
+                    window.initNav();
+                }
+            }
         })
         .catch((err) => {
             console.error("Error loading header:", err);
