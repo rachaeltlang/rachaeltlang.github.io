@@ -51,6 +51,17 @@
 
         // start closed (in case HTML shipped without hidden)
         setOpen(false);
+
+        // mark current page in drawer + header
+        const path = window.location.pathname.replace(/\/$/, "");
+        document.querySelectorAll(".nav-drawer a, .header-nav a").forEach((a) => {
+            const href = a.getAttribute("href");
+            if (!href) return;
+
+            // normalize href to compare
+            const link = new URL(href, window.location.origin).pathname.replace(/\/$/, "");
+            if (link === path) a.setAttribute("aria-current", "page");
+        });
     }
 
     // expose globally so layout.js can call after injecting header
